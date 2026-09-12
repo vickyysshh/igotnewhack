@@ -1,0 +1,3 @@
+// Use native option labels rather than mixed JSX children, keeping valid HTML
+// when the preview editor instruments visible text.
+export const CourseFilter=({label,value,onChange,options})=><label>{label}<select data-testid={`course-filter-${label.toLowerCase()}`} value={value} onChange={e=>onChange(e.target.value)}><option value="All" label={`All ${label.toLowerCase()}s`}/>{options.map(option=><option key={option} value={option} label={option}/>)}</select></label>;

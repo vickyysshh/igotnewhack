@@ -1,0 +1,14 @@
+{
+  "date": "2026-09-11",
+  "original_report": "/app/test_reports/iteration_1.json",
+  "backend_regression": {"passed":11,"failed":0,"report":"/app/test_reports/pytest/final_results.xml"},
+  "production_build":"pass",
+  "resolved_issues":[
+    {"issue":"Consecutive PDF/CSV/Excel export flakiness","fix":"Prepare actual report Blobs before presenting native download anchors; retain modal for multiple format downloads; revoke URLs on close.","verification":"Single uninterrupted workforce report PDF, CSV, XLSX downloads passed; close/reopen future report XLSX also passed."},
+    {"issue":"Recharts -1 dimensions warning","fix":"Shared StableChart provides positive initialDimension and minWidth/minHeight.","verification":"Employee, admin and future chart routes rendered without width/height warnings."},
+    {"issue":"Span elements inside native options","fix":"Course filters and upload question count/type now use native option label/value attributes.","verification":"Both routes had zero option span elements, working selections and no nesting errors."}
+  ],
+  "console":"No application runtime, nesting or chart errors. Navigation aborted preview overlay/telemetry reports only.",
+  "remaining_blockers":[],
+  "maintenance_backlog":["Incrementally split legacy shared CSS into feature stylesheets; not a functional defect."]
+}

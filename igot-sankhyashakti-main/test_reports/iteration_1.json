@@ -1,0 +1,67 @@
+{
+  "summary": "Completed backend pytest regression and broad frontend E2E validation for landing/login, employee connected state, assessments, trainer upload, admin analytics, reports exports, users, and responsive behavior against external preview URL.",
+  "backend_issues": {
+    "critical": [],
+    "minor": []
+  },
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [
+      {
+        "flow": "Reports export modal used sequentially (PDF then CSV/Excel)",
+        "issue": "CSV/Excel download event intermittently did not trigger in same session after PDF export (timed out twice); each format works in fresh modal/session and direct CSV+Excel run succeeded.",
+        "affected_selectors": [
+          "[data-testid='open-report-workforce']",
+          "[data-testid='open-report-department']",
+          "[data-testid='open-report-future']",
+          "[data-testid='export-pdf']",
+          "[data-testid='export-csv']",
+          "[data-testid='export-excel']"
+        ]
+      }
+    ],
+    "design_issues": [
+      {
+        "screen": "Multiple chart pages (Dashboard/Admin/Trainer/Future)",
+        "issues": [
+          "Browser console repeatedly logs Recharts container warnings: width(-1)/height(-1), indicating unstable chart mount/layout calculations on initial render or route transitions."
+        ]
+      },
+      {
+        "screen": "Courses and Upload Material pages",
+        "issues": [
+          "Browser console logs React HTML nesting/hydration error: '<span> cannot be a child of <option>' (likely rendering transform/instrumentation issue around option labels)."
+        ]
+      }
+    ]
+  },
+  "test_report_links": [
+    "/app/backend/tests/test_prototype_api.py",
+    "/app/test_reports/pytest/pytest_results.xml"
+  ],
+  "action_items": [
+    "Fix console error source for '<span> inside <option>' to remove hydration/runtime noise.",
+    "Stabilize chart containers to eliminate Recharts width/height -1 warnings.",
+    "Harden report export modal sequence handling so PDF->CSV->Excel works reliably in one uninterrupted user flow.",
+    "Re-run frontend console-clean verification after fixes."
+  ],
+  "critical_code_review_comments": [
+    "frontend/src/App.css is very large (>700 lines, currently much larger) and should be split into focused stylesheet modules for maintainability and safer regression impact.",
+    "All core API computations/state-sync behaved deterministically in testing; no backend business-logic defects were detected in covered flows.",
+    "MOCKED integrations are correctly disclosed in UI for AI/iGOT/NSSTA/document extraction/demo auth flows."
+  ],
+  "updated_files": [
+    "/app/backend/tests/test_prototype_api.py",
+    "/app/test_reports/iteration_1.json"
+  ],
+  "success_rate": {
+    "backend": "100%",
+    "frontend": "90%"
+  },
+  "test_credentials": "Checked /app/memory/test_credentials.md before auth tests; file exists but is empty. Demo role auth requires no credentials.",
+  "seed_data_creation": "None",
+  "retest_needed": true,
+  "should_main_agent_self_test": true,
+  "context_for_next_testing_agent": "Backend regression is in /app/backend/tests/test_prototype_api.py (11 tests, all passing). Frontend verified major requested flows on external URL with multiple fresh sessions/viewports. If retesting reports export, validate sequential multi-format exports in one session (observed intermittent timeout after prior PDF).",
+  "rca of the issue": "RCA (frontend console): repeated Recharts warnings come from chart components mounting with transient invalid container dimensions during route/render transitions; hydration error indicates invalid transformed markup around native <option> elements where an extra <span> wrapper is introduced. Export flakiness appears timing/state related in modal lifecycle after prior export action, not a full hard failure of CSV/Excel generation."
+}

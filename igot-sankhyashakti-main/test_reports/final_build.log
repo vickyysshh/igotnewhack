@@ -1,0 +1,29 @@
+yarn run v1.22.22
+$ craco build
+Creating an optimized production build...
+Compiled successfully.
+
+File sizes after gzip:
+
+  309.63 kB (+1.06 kB)  build/static/js/main.5d7ad527.js
+  257.02 kB             build/static/js/223.711e2a22.chunk.js
+  127.83 kB             build/static/js/396.d3d01e30.chunk.js
+  46.35 kB              build/static/js/239.e39fb35b.chunk.js
+  43.33 kB              build/static/js/455.d95a209f.chunk.js
+  34.33 kB (+126 B)     build/static/css/main.9c34109a.css
+  10.94 kB              build/static/js/977.d312a42f.chunk.js
+
+The project was built assuming it is hosted at /.
+You can control this with the homepage field in your package.json.
+
+The build folder is ready to be deployed.
+You may serve it with a static server:
+
+  yarn global add serve
+  serve -s build
+
+Find out more about deployment here:
+
+  https://cra.link/deployment
+
+Done in 31.04s.
