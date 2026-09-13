@@ -1,8 +1,279 @@
-.register-page{min-height:100vh;background:#f3f7fb}.register-page .public-header{background:#fff}.register-shell{max-width:1160px;margin:0 auto;padding:52px 28px 80px;display:grid;grid-template-columns:minmax(260px,.8fr) minmax(520px,1.2fr);gap:44px}.register-intro{padding:42px 18px}.register-intro h1{font-size:42px;line-height:1.05;color:#173f68;margin:22px 0 18px}.register-intro p{max-width:370px;color:#60758b;line-height:1.7}.register-note{display:flex;gap:10px;align-items:flex-start;margin-top:34px;padding:15px;border-left:3px solid #ee9a22;background:#fff;color:#39566f;font-size:13px;line-height:1.5}.register-card{background:#fff;border:1px solid #dbe5ee;box-shadow:0 16px 40px rgba(26,64,98,.1);padding:30px;border-radius:8px}.register-card-heading{border-bottom:1px solid #e8eef3;padding-bottom:18px;margin-bottom:22px}.register-card-heading h2{margin:6px 0;color:#173f68}.register-card-heading p{margin:0;color:#718194;font-size:13px}.register-form{display:grid;grid-template-columns:1fr 1fr;gap:18px}.register-form>label{display:flex;flex-direction:column;gap:7px;color:#38566e;font-size:13px;font-weight:600}.register-form select{height:42px;border:1px solid #c9d6e2;border-radius:4px;padding:0 11px;background:#fff;color:#29445b;font:inherit;font-weight:400}.register-form select:disabled{background:#f3f6f8;color:#94a2ae}.register-form fieldset{grid-column:1 / -1;border:0;border-top:1px solid #e8eef3;padding:18px 0 0;margin:2px 0 0}.register-form legend{color:#38566e;font-size:13px;font-weight:600}.field-help{margin:5px 0 12px;color:#798b9b;font-size:12px}.domain-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.radio-option{display:flex;align-items:center;gap:7px;border:1px solid #dbe5ee;border-radius:4px;padding:10px 9px;color:#526b80;font-size:12px;cursor:pointer}.radio-option:has(input:checked){border-color:#2864a6;background:#eef5fb;color:#1b5488}.radio-option input{accent-color:#2864a6}.register-form>.action-btn{grid-column:1 / -1;justify-self:start;margin-top:4px}.register-success{text-align:center;padding:42px 12px;color:#476277}.register-success svg{color:#3f9377}.register-success h2{color:#173f68;margin:14px 0 7px}.register-success p{margin:0 0 22px}@media(max-width:800px){.register-shell{grid-template-columns:1fr;padding:28px 16px 50px;gap:8px}.register-intro{padding:20px 4px}.register-intro h1{font-size:34px}.register-card{padding:22px 17px}.domain-grid{grid-template-columns:1fr 1fr}}@media(max-width:500px){.register-form{grid-template-columns:1fr}.register-form fieldset{grid-column:auto}.register-form>.action-btn{grid-column:auto}.domain-grid{grid-template-columns:1fr}}
+.register-page {
+  min-height: 100vh;
+  background: #f3f7fb
+}
+
+.register-page .public-header {
+  background: #fff
+}
+
+.register-shell {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 52px 28px 80px;
+  display: grid;
+  grid-template-columns: minmax(260px, .8fr) minmax(520px, 1.2fr);
+  gap: 44px
+}
+
+.register-intro {
+  padding: 42px 18px
+}
+
+.register-intro h1 {
+  font-size: 42px;
+  line-height: 1.05;
+  color: #173f68;
+  margin: 22px 0 18px
+}
+
+.register-intro p {
+  max-width: 370px;
+  color: #60758b;
+  line-height: 1.7
+}
+
+.register-note {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  margin-top: 34px;
+  padding: 15px;
+  border-left: 3px solid #ee9a22;
+  background: #fff;
+  color: #39566f;
+  font-size: 13px;
+  line-height: 1.5
+}
+
+.register-card {
+  background: #fff;
+  border: 1px solid #dbe5ee;
+  box-shadow: 0 16px 40px rgba(26, 64, 98, .1);
+  padding: 30px;
+  border-radius: 8px
+}
+
+.register-card-heading {
+  border-bottom: 1px solid #e8eef3;
+  padding-bottom: 18px;
+  margin-bottom: 22px
+}
+
+.register-card-heading h2 {
+  margin: 6px 0;
+  color: #173f68
+}
+
+.register-card-heading p {
+  margin: 0;
+  color: #718194;
+  font-size: 13px
+}
+
+.register-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px
+}
+
+.register-form>label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  color: #38566e;
+  font-size: 13px;
+  font-weight: 600
+}
+
+.register-form select {
+  height: 42px;
+  border: 1px solid #c9d6e2;
+  border-radius: 4px;
+  padding: 0 11px;
+  background: #fff;
+  color: #29445b;
+  font: inherit;
+  font-weight: 400
+}
+
+.register-form select:disabled {
+  background: #f3f6f8;
+  color: #94a2ae
+}
+
+.register-form fieldset {
+  grid-column: 1 / -1;
+  border: 0;
+  border-top: 1px solid #e8eef3;
+  padding: 18px 0 0;
+  margin: 2px 0 0
+}
+
+.register-form legend {
+  color: #38566e;
+  font-size: 13px;
+  font-weight: 600
+}
+
+.field-help {
+  margin: 5px 0 12px;
+  color: #798b9b;
+  font-size: 12px
+}
+
+.domain-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 9px
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  border: 1px solid #dbe5ee;
+  border-radius: 4px;
+  padding: 10px 9px;
+  color: #526b80;
+  font-size: 12px;
+  cursor: pointer
+}
+
+.radio-option:has(input:checked) {
+  border-color: #2864a6;
+  background: #eef5fb;
+  color: #1b5488
+}
+
+.radio-option input {
+  accent-color: #2864a6
+}
+
+.register-form>.action-btn {
+  grid-column: 1 / -1;
+  justify-self: start;
+  margin-top: 4px
+}
+
+.register-success {
+  text-align: center;
+  padding: 42px 12px;
+  color: #476277
+}
+
+.register-success svg {
+  color: #3f9377
+}
+
+.register-success h2 {
+  color: #173f68;
+  margin: 14px 0 7px
+}
+
+.register-success p {
+  margin: 0 0 22px
+}
+
+@media(max-width:800px) {
+  .register-shell {
+    grid-template-columns: 1fr;
+    padding: 28px 16px 50px;
+    gap: 8px
+  }
+
+  .register-intro {
+    padding: 20px 4px
+  }
+
+  .register-intro h1 {
+    font-size: 34px
+  }
+
+  .register-card {
+    padding: 22px 17px
+  }
+
+  .domain-grid {
+    grid-template-columns: 1fr 1fr
+  }
+}
+
+@media(max-width:500px) {
+  .register-form {
+    grid-template-columns: 1fr
+  }
+
+  .register-form fieldset {
+    grid-column: auto
+  }
+
+  .register-form>.action-btn {
+    grid-column: auto
+  }
+
+  .domain-grid {
+    grid-template-columns: 1fr
+  }
+}
+
 /* Keep the civic architecture visible instead of cropping to the road foreground. */
-.login-scene{background-position:center top}
-.login-scene:before{background:linear-gradient(180deg,#ebf5fde8 0%,#eaf4fca8 38%,#edf7fb08 100%)}
-@media(max-width:767px){.login-scene{background-position:center top}.login-scene:before{background:linear-gradient(180deg,#edf6fde8,#edf6fdb5 28%,#edf5fb 48%)}}
-.register-form .form-wide{grid-column:1 / -1}.register-form .field-help{font-weight:400;margin:2px 0 0}
-.register-form input{height:42px;border:1px solid #c9d6e2;border-radius:4px;padding:0 11px;background:#fff;color:#29445b;font:inherit;font-weight:400}.register-form-actions{grid-column:1 / -1;display:flex;gap:10px;margin-top:4px}.register-form-actions .action-btn{margin:0}
-.demo-login-buttons [data-testid="login-as-trainer"] span{font-size:0;visibility:hidden}.demo-login-buttons [data-testid="login-as-trainer"] span:after{content:'NSSTA Officer Login';font-size:11px;visibility:visible}
+.login-scene {
+  background-position: center top
+}
+
+.login-scene:before {
+  background: linear-gradient(180deg, #ebf5fde8 0%, #eaf4fca8 38%, #edf7fb08 100%)
+}
+
+@media(max-width:767px) {
+  .login-scene {
+    background-position: center top
+  }
+
+  .login-scene:before {
+    background: linear-gradient(180deg, #edf6fde8, #edf6fdb5 28%, #edf5fb 48%)
+  }
+}
+
+.register-form .form-wide {
+  grid-column: 1 / -1
+}
+
+.register-form .field-help {
+  font-weight: 400;
+  margin: 2px 0 0
+}
+
+.register-form input {
+  height: 42px;
+  border: 1px solid #c9d6e2;
+  border-radius: 4px;
+  padding: 0 11px;
+  background: #fff;
+  color: #29445b;
+  font: inherit;
+  font-weight: 400
+}
+
+.register-form-actions {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 10px;
+  margin-top: 4px
+}
+
+.register-form-actions .action-btn {
+  margin: 0
+}
+
+.demo-login-buttons [data-testid="login-as-trainer"] span {
+  font-size: 0;
+  visibility: hidden
+}
+
+.demo-login-buttons [data-testid="login-as-trainer"] span:after {
+  content: 'NSSTA Officer Login';
+  font-size: 11px;
+  visibility: visible
+}
