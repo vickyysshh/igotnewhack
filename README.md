@@ -111,14 +111,7 @@ igot-sankhyashakti-main/
 
 2. Create and activate a Python virtual environment:
    ```bash
-   # Windows PowerShell
-   python -m venv venv
-   .\venv\Scripts\Activate.ps1
 
-   # Linux/macOS
-   python3 -m venv venv
-   source venv/bin/activate
-   ```
 
 3. Install required Python packages:
    ```bash
@@ -130,22 +123,9 @@ igot-sankhyashakti-main/
    cp .env.example .env
    ```
    Edit `.env` with your settings:
-   ```env
-   MONGO_URL=mongodb://localhost:27017/
-   DB_NAME=igot_sankhyashakti
-   GEMINI_API_KEY=your_google_gemini_api_key
-   GEMINI_MODEL=gemini-flash-latest
-   CORS_ORIGINS=http://localhost:3000,http://127.0.0.1:3000
-   N8N_ASSESSMENT_WEBHOOK_URL=https://hackathon2626.app.n8n.cloud/webhook/generate-mcqs
-   ```
+   ```en
 
-5. Start the backend server:
-   ```bash
-   python -m uvicorn server:app --host 127.0.0.1 --port 8000 --reload
-   ```
-   The backend API will be available at `http://127.0.0.1:8000`. API documentation is available at `http://127.0.0.1:8000/docs`.
 
----
 
 ### 2. Frontend Setup
 
@@ -196,13 +176,7 @@ igot-sankhyashakti-main/
 
 ---
 
-## 🧪 Running Tests
 
-To execute the automated backend test suite:
-```bash
-cd backend
-python -m pytest tests/test_end_to_end_flow.py -v
-```
 
 ---
 
