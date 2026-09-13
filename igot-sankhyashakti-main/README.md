@@ -171,7 +171,22 @@ igot-sankhyashakti-main/
 
 ---
 
-### 3. n8n Assessment Workflow Setup (Optional / Production)
+### 3. Deploying Frontend to Vercel
+
+1. Log into your **[Vercel Dashboard](https://vercel.com)** and click **"Add New Project"**.
+2. Import your GitHub repository: `https://github.com/vickyysshh/igotnewhack`.
+3. Configure the project:
+   - **Root Directory**: Click **Edit** and select `igot-sankhyashakti-main/frontend`
+   - **Framework Preset**: `Create React App`
+   - **Build Command**: `npm run build` (or `yarn build`)
+   - **Output Directory**: `build`
+4. In **Environment Variables**:
+   - Add `REACT_APP_BACKEND_URL`: URL of your deployed backend (e.g., `https://your-backend.onrender.com` or leave empty if testing client UI).
+5. Click **Deploy**. SPA routing and deep links are already configured in `vercel.json`.
+
+---
+
+### 4. n8n Assessment Workflow Setup (Optional / Production)
 
 1. Open your **n8n** instance (Cloud or self-hosted).
 2. Go to **Workflows** -> **Import from File**.
