@@ -1,12 +1,13 @@
 import {useState,useEffect} from 'react';
 import {useSearchParams,Link,useParams} from 'react-router-dom';
-import {Search,SlidersHorizontal,Clock,Star,BookOpen,ArrowRight,CheckCircle2,Play,ArrowLeft,Building2,CalendarDays,MapPin,Sparkles,Info,Download} from 'lucide-react';
+import {Search,SlidersHorizontal,Clock,Star,BookOpen,ArrowRight,CheckCircle2,Play,ArrowLeft,Building2,CalendarDays,MapPin,Sparkles,Info,Download,FileText} from 'lucide-react';
 import {toast} from 'sonner';
 import {PageHead,Badge,Btn,Empty,Modal,ProgressBar,SectionHead,DemoNote} from '../components/Common';
 import {CourseCard} from '../components/CompetencyUI';
 import {CourseFilter} from '../components/CourseFilters';
 import {useDemo} from '../context/DemoContext';
 import {api,apiError} from '../lib/api';
+import {hasLearningMaterial} from '../constants/learningMaterials';
 export default function Courses(){const {data,act}=useDemo(),[params,setParams]=useSearchParams();const [query,setQuery]=useState(params.get('q')||''),[skill,setSkill]=useState('All'),[difficulty,setDifficulty]=useState('All'),[provider,setProvider]=useState('All'),[duration,setDuration]=useState('All'),[department,setDepartment]=useState('All'),[page,setPage]=useState(1),[searchResults,setSearchResults]=useState(null),[searching,setSearching]=useState(false),[searchError,setSearchError]=useState(''),[busy,setBusy]=useState('');const tab=params.get('tab')||'courses';
 useEffect(()=>setQuery(params.get('q')||''),[params]);
 useEffect(()=>{let valid=true;setPage(1);if(!query.trim()){setSearchResults(null);setSearching(false);return;}setSearching(true);const timeout=setTimeout(()=>api.get('/courses',{params:{q:query}}).then(r=>{if(valid){setSearchResults(r.data);setSearchError('');}}).catch(e=>{if(valid)setSearchError(apiError(e));}).finally(()=>{if(valid)setSearching(false);}),300);return()=>{valid=false;clearTimeout(timeout);};},[query]);
@@ -28,6 +29,72 @@ return <div className="page-enter">
     {rows.length>6&&<div className="pagination"><Btn small secondary disabled={page===1} data-testid="courses-previous-page" onClick={()=>setPage(page-1)}>Previous</Btn><span data-testid="course-page-number">Page {page} of {Math.ceil(rows.length/6)}</span><Btn small secondary disabled={page>=Math.ceil(rows.length/6)} data-testid="courses-next-page" onClick={()=>setPage(page+1)}>Next</Btn></div>}
   </>}
   <DemoNote>Course and programme information is simulated. No live iGOT or NSSTA systems are connected.</DemoNote>
-</div>}
+</div>;}
 
-export function CourseDetail(){const {id}=useParams(),{data,act}=useDemo();const [module,setModule]=useState(null),[busy,setBusy]=useState(false);const c=data.courses.find(x=>x.id===id);if(!c)return <Empty title="Course not found" text="Return to the iGOT Course Explorer to choose a course."/>;const comp=data.competencies.find(x=>x.name===c.competency);const complete=async()=>{setBusy(true);try{await act(()=>api.post(`/courses/${id}/complete-module`,{module}),'Learning progress updated.');setModule(null);}catch{}finally{setBusy(false);}};return <div className="page-enter"><Link className="back-link" to="/app/courses" data-testid="back-to-courses"><ArrowLeft size={16}/>Course Explorer</Link><PageHead eyebrow={c.provider} title={c.title} description={c.description} action={<Badge tone="orange" testId="course-detail-demo">Demo Integration</Badge>}/><div className="course-detail-layout"><div><div className="course-detail-banner"><BookOpen size={58} strokeWidth={1}/><div><span>{c.category.toUpperCase()} COMPETENCY</span><h2>{c.competency}</h2><p>Applied learning for the Official Statistical System</p></div></div><div className="course-detail-meta">{[[Clock,`${c.duration} hours`],[Star,`${c.rating} rating`],[BookOpen,c.difficulty]].map(([Icon,t])=><span key={t}><Icon size={17}/>{t}</span>)}<span>{c.language}</span></div><SectionHead id="course-modules" title="Your course curriculum" description="Four focused modules · Demonstration learning content"/><div className="modules-list">{c.modules.map((m,i)=><button className="module-row" key={m} data-testid={`course-module-${i}`} onClick={()=>setModule(i)}><span className={`module-number ${c.completed_modules.includes(i)?'done':''}`}>{c.completed_modules.includes(i)?<CheckCircle2 size={19}/>:String(i+1).padStart(2,'0')}</span><div><strong>{m}</strong><small>{c.duration/4} hours · Reading & practical exercise</small></div>{c.completed_modules.includes(i)?<Badge tone="green" testId={`module-status-${i}`}>Completed</Badge>:<Play size={18}/>}</button>)}</div><div className="course-description-section"><h2>What you’ll build</h2><p>A practical understanding of {c.competency.toLowerCase()}, with emphasis on statistical quality, reproducible workflows and role-aligned application.</p><h2>Prerequisites</h2><p>{c.prerequisites}</p><h2>Course information</h2><p>Department: {c.department} · Completion rate: {c.completion_rate}% · Language: {c.language}</p></div></div><aside><div className="course-enrollment"><Badge tone={c.status==='Completed'?'green':'blue'} testId="course-enrollment-status">{c.status}</Badge><h2>Your learning progress</h2><strong className="enrollment-percent" data-testid="course-completion-percent">{c.completed_modules.length*25}%</strong><ProgressBar value={c.completed_modules.length*25} id="course-module-progress"/><p>{c.completed_modules.length} of 4 modules completed</p><Btn disabled={busy} data-testid="course-enroll-button" onClick={async()=>{setBusy(true);try{await act(()=>api.post(`/courses/${id}/enroll`));setModule(c.modules.findIndex((_,i)=>!c.completed_modules.includes(i))===-1?0:c.modules.findIndex((_,i)=>!c.completed_modules.includes(i)));}catch{}finally{setBusy(false);}}}>{busy?'Opening…':c.status==='Completed'?'Review Learning':c.status==='In Progress'?'Continue Learning':'Start Learning'}<ArrowRight size={16}/></Btn><Btn secondary to={`/app/assessments?competency=${encodeURIComponent(c.competency)}`} data-testid="course-take-assessment">Take Competency Assessment</Btn><small>Course completion and competency assessment are tracked separately.</small></div><div className="course-recommendation"><Sparkles size={22}/><h3>Why this course?</h3><p data-testid="course-recommendation-reason">Your {c.competency} competency is <strong>{comp?.current}%</strong> against a role target of <strong>{comp?.required}%</strong>. This course addresses a {comp?.gap}-point gap in your competency profile.</p></div></aside></div><Modal open={module!==null} onClose={()=>setModule(null)} title={module!==null?c.modules[module]:''} description="Learning simulation · Sample instructional content">{module!==null&&<div className="lesson-content"><Badge tone="blue" testId="lesson-simulation-label">DEMONSTRATION LESSON</Badge><h3>{c.competency}: applied to official statistics</h3><p data-testid="lesson-body">{c.competency==='SQL'?'Consider a labour survey dataset with household_id, state, employment_status and survey_weight. Use a SELECT query to inspect records, validate missing values with IS NULL, and use GROUP BY to summarize observations by state. Join reference data with LEFT JOIN to preserve all survey records.':'Begin by defining the statistical objective and the population of interest. Validate the source data, document assumptions, and apply the relevant analytical method. Evaluate results against an independent baseline and communicate uncertainty before publication.'}</p><div className="lesson-exercise"><h3>Reflect & apply</h3><p>How would you apply this method in your department? Identify one data-quality risk and one validation check before using the result in an official report.</p></div><Btn data-testid="mark-module-complete" disabled={busy} onClick={complete}>{busy?'Saving…':c.completed_modules.includes(module)?'Reviewed — Close':'Mark Module Complete'}<CheckCircle2 size={16}/></Btn></div>}</Modal></div>}
+export function CourseDetail(){
+  const {id}=useParams(),{data,act}=useDemo();
+  const [module,setModule]=useState(null),[busy,setBusy]=useState(false);
+  const [aiReason,setAiReason]=useState('');
+  const c=data.courses.find(x=>x.id===id);
+
+  useEffect(()=>{
+    if(id){
+      api.get(`/courses/${id}/why`).then(r=>{
+        if(r.data?.explanation) setAiReason(r.data.explanation);
+      }).catch(()=>{});
+    }
+  },[id]);
+
+  if(!c)return <Empty title="Course not found" text="Return to the iGOT Course Explorer to choose a course."/>;
+  const comp=data.competencies.find(x=>x.name===c.competency);
+  const complete=async()=>{
+    setBusy(true);
+    try{
+      await act(()=>api.post(`/courses/${id}/complete-module`,{module}),'Learning progress updated.');
+      setModule(null);
+    }catch{}finally{setBusy(false);}
+  };
+
+  return <div className="page-enter">
+    <Link className="back-link" to="/app/courses" data-testid="back-to-courses"><ArrowLeft size={16}/>Course Explorer</Link>
+    <PageHead eyebrow={c.provider} title={c.title} description={c.description} action={<Badge tone="orange" testId="course-detail-demo">Local Mock iGOT Data</Badge>}/>
+    <div className="course-detail-layout">
+      <div>
+        <div className="course-detail-banner"><BookOpen size={58} strokeWidth={1}/><div><span>{c.category.toUpperCase()} COMPETENCY</span><h2>{c.competency}</h2><p>Applied learning for the Official Statistical System</p></div></div>
+        <div className="course-detail-meta">{[[Clock,`${c.duration} hours`],[Star,`${c.rating} rating`],[BookOpen,c.difficulty]].map(([Icon,t])=><span key={t}><Icon size={17}/>{t}</span>)}<span>{c.language}</span></div>
+        <SectionHead id="course-modules" title="Your course curriculum" description="Four focused modules · Demonstration learning content"/>
+        <div className="modules-list">{c.modules.map((m,i)=><button className="module-row" key={m} data-testid={`course-module-${i}`} onClick={()=>setModule(i)}><span className={`module-number ${c.completed_modules.includes(i)?'done':''}`}>{c.completed_modules.includes(i)?<CheckCircle2 size={19}/>:String(i+1).padStart(2,'0')}</span><div><strong>{m}</strong><small>{c.duration/4} hours · Reading & practical exercise</small></div>{c.completed_modules.includes(i)?<Badge tone="green" testId={`module-status-${i}`}>Completed</Badge>:<Play size={18}/>}</button>)}</div>
+        <div className="course-description-section"><h2>What you’ll build</h2><p>A practical understanding of {c.competency.toLowerCase()}, with emphasis on statistical quality, reproducible workflows and role-aligned application.</p><h2>Prerequisites</h2><p>{c.prerequisites}</p><h2>Course information</h2><p>Department: {c.department} · Completion rate: {c.completion_rate}% · Language: {c.language}</p></div>
+      </div>
+      <aside>
+        <div className="course-enrollment">
+          <Badge tone={c.status==='Completed'?'green':'blue'} testId="course-enrollment-status">{c.status}</Badge>
+          <h2>Your learning progress</h2>
+          <strong className="enrollment-percent" data-testid="course-completion-percent">{c.completed_modules.length*25}%</strong>
+          <ProgressBar value={c.completed_modules.length*25} id="course-module-progress"/>
+          <p>{c.completed_modules.length} of 4 modules completed</p>
+          <Btn disabled={busy} data-testid="course-enroll-button" onClick={async()=>{setBusy(true);try{await act(()=>api.post(`/courses/${id}/enroll`));setModule(c.modules.findIndex((_,i)=>!c.completed_modules.includes(i))===-1?0:c.modules.findIndex((_,i)=>!c.completed_modules.includes(i)));}catch{}finally{setBusy(false);}}}>{busy?'Opening…':c.status==='Completed'?'Review Learning':c.status==='In Progress'?'Continue Learning':'Start Learning'}<ArrowRight size={16}/></Btn>
+          <Btn secondary to={`/app/assessments?competency=${encodeURIComponent(c.competency)}`} data-testid="course-take-assessment">Take Competency Assessment</Btn>
+          {hasLearningMaterial(c.id)&&<Btn secondary to={`/app/courses/${c.id}/material`} data-testid="view-learning-material"><FileText size={15}/>View Learning Material</Btn>}
+          <small>Course completion and competency assessment are tracked separately.</small>
+        </div>
+        <div className="course-recommendation">
+          <Sparkles size={22}/>
+          <h3>Why this course?</h3>
+          <p data-testid="course-recommendation-reason">
+            {aiReason || `Your ${c.competency} competency is ${comp?.current}% against a role target of ${comp?.required}%. This course addresses a ${comp?.gap}-point gap in your competency profile.`}
+          </p>
+        </div>
+      </aside>
+    </div>
+    <Modal open={module!==null} onClose={()=>setModule(null)} title={module!==null?c.modules[module]:''} description="Learning simulation · Sample instructional content">
+      {module!==null&&<div className="lesson-content">
+        <Badge tone="blue" testId="lesson-simulation-label">DEMONSTRATION LESSON</Badge>
+        <h3>{c.competency}: applied to official statistics</h3>
+        <p data-testid="lesson-body">{c.competency==='SQL'?'Consider a labour survey dataset with household_id, state, employment_status and survey_weight. Use a SELECT query to inspect records, validate missing values with IS NULL, and use GROUP BY to summarize observations by state. Join reference data with LEFT JOIN to preserve all survey records.':'Begin by defining the statistical objective and the population of interest. Validate the source data, document assumptions, and apply the relevant analytical method. Evaluate results against an independent baseline and communicate uncertainty before publication.'}</p>
+        <div className="lesson-exercise"><h3>Reflect & apply</h3><p>How would you apply this method in your department? Identify one data-quality risk and one validation check before using the result in an official report.</p></div>
+        <Btn data-testid="mark-module-complete" disabled={busy} onClick={complete}>{busy?'Saving…':c.completed_modules.includes(module)?'Reviewed — Close':'Mark Module Complete'}<CheckCircle2 size={16}/></Btn>
+      </div>}
+    </Modal>
+  </div>;
+}

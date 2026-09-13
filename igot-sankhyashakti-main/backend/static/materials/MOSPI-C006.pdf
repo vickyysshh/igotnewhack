@@ -1,0 +1,1203 @@
+%PDF-1.3
+%ºß¬à
+3 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 4 0 R
+>>
+endobj
+4 0 obj
+<<
+/Length 6815
+>>
+stream
+0.200025 w
+0 G
+0.09 0.17 0.29 rg
+54. 793.8899999999999864 m
+541.2799999999999727 793.8899999999999864 l
+544.5937084989847108 793.8899999999999864 547.2799999999999727 791.2037084989847244 547.2799999999999727 787.8899999999999864 c
+547.2799999999999727 689.8899999999999864 l
+547.2799999999999727 686.5762915010152483 543.9662915010152346 683.8899999999999864 541.2799999999999727 683.8899999999999864 c
+54. 683.8899999999999864 l
+50.6862915010152406 683.8899999999999864 48. 687.2037084989847244 48. 689.8899999999999864 c
+48. 787.8899999999999864 l
+48. 791.2037084989847244 51.3137084989847594 793.8899999999999864 54. 793.8899999999999864 c
+h
+f
+BT
+/F2 10 Tf
+11.5 TL
+0.961 0.62 0.043 rg
+66. 767.8899999999999864 Td
+(iGOT KARMAYOGI - MoSPI COMPETENCY MODULE) Tj
+ET
+BT
+/F2 16 Tf
+18.3999999999999986 TL
+1. g
+66. 743.8899999999999864 Td
+(Employment-Unemployment Indicator Estimation) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.796 0.835 0.882 rg
+66. 701.8899999999999864 Td
+(Course ID: MOSPI-C006   |   Domain: Labour Statistics   |   Level: Intermediate   |   Duration: 4 hours) Tj
+ET
+0.97 0.98 0.99 rg
+0.8 0.84 0.88 RG
+0.8 w
+52. 668.8899999999999864 m
+543.2799999999999727 668.8899999999999864 l
+545.4891389993231314 668.8899999999999864 547.2799999999999727 667.0991389993231451 547.2799999999999727 664.8899999999999864 c
+547.2799999999999727 630.8899999999999864 l
+547.2799999999999727 628.6808610006768276 545.070861000676814 626.8899999999999864 543.2799999999999727 626.8899999999999864 c
+52. 626.8899999999999864 l
+49.7908610006768271 626.8899999999999864 48. 629.0991389993231451 48. 630.8899999999999864 c
+48. 664.8899999999999864 l
+48. 667.0991389993231451 50.2091389993231729 668.8899999999999864 52. 668.8899999999999864 c
+h
+B
+BT
+/F2 8.5 Tf
+9.7749999999999986 TL
+0.706 0.325 0.035 rg
+60. 652.8899999999999864 Td
+(PROTOTYPE LEARNING MATERIAL NOTICE) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.278 0.333 0.412 rg
+60. 638.8899999999999864 Td
+(This learning module is compiled from curriculum standards for role-aligned training demonstration.) Tj
+ET
+BT
+/F2 11 Tf
+12.6499999999999986 TL
+0.059 0.09 0.165 rg
+48. 612.8899999999999864 Td
+(Table of Contents) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.251 0.686 rg
+58. 596.8899999999999864 Td
+(1. Introduction) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.251 0.686 rg
+58. 582.8899999999999864 Td
+(2. Key Concepts) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.251 0.686 rg
+58. 568.8899999999999864 Td
+(3. Estimation Methodology) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.251 0.686 rg
+58. 554.8899999999999864 Td
+(4. Administrative Data Sources for Employment Estimation) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.251 0.686 rg
+58. 540.8899999999999864 Td
+(5. Interpretation and Common Pitfalls) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.251 0.686 rg
+58. 526.8899999999999864 Td
+(6. Practical Example: Computing State-level LFPR) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.251 0.686 rg
+58. 512.8899999999999864 Td
+(7. Data Quality Considerations) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.251 0.686 rg
+58. 498.8899999999999864 Td
+(8. Key Learning Points) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.251 0.686 rg
+58. 484.8899999999999864 Td
+(9. Learning Outcomes) Tj
+ET
+0.89 0.91 0.94 RG
+48. 455.8899999999999864 m
+547.2799999999999727 455.8899999999999864 l
+S
+BT
+/F2 13 Tf
+14.9499999999999993 TL
+0.059 0.09 0.165 rg
+48. 435.8899999999999864 Td
+(1. Introduction) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.2 0.255 0.333 rg
+48. 417.8899999999999864 Td
+(Employment and unemployment indicators are among the most closely watched economic statistics, directly informing) Tj
+T* (labour policy, social protection design, and macroeconomic management. In India, the primary source for these) Tj
+T* (indicators is the Periodic Labour Force Survey \(PLFS\), supplemented by administrative data from EPFO, ESIC, NPS,) Tj
+T* (and payroll-based estimates.) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.2 0.255 0.333 rg
+48. 357.8899999999999864 Td
+(This course focuses on the estimation methodology for employment-unemployment indicators: how they are computed) Tj
+T* (from survey data, how they are validated, and how they are interpreted in the Indian context. It also covers the) Tj
+T* (internationally recommended definitions from ILO's Resolution on Statistics of Work, Employment and Labour) Tj
+T* (Underutilisation \(2013 ICLS\).) Tj
+ET
+BT
+/F2 13 Tf
+14.9499999999999993 TL
+0.059 0.09 0.165 rg
+48. 285.8899999999999864 Td
+(2. Key Concepts) Tj
+ET
+BT
+/F2 10.5 Tf
+12.0749999999999993 TL
+0.118 0.161 0.231 rg
+54. 267.8899999999999864 Td
+(2.1 ILO / ICLS 2013 Definitions) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.2 0.255 0.333 rg
+54. 252.8899999999999864 Td
+(The 19th International Conference of Labour Statisticians \(ICLS, 2013\) redefined key concepts:) Tj
+T* () Tj
+T* (**Employment**: Persons who, during the reference period, worked for at least one hour in exchange for pay or) Tj
+T* (profit, or worked in a job regardless of any pay \(contributing family worker\).) Tj
+T* () Tj
+T* (**Unemployment**: Persons who: \(a\) are not in employment, \(b\) are available for employment, and \(c\) are seeking) Tj
+T* (employment. All three conditions must be met simultaneously.) Tj
+T* () Tj
+T* (**Labour underutilisation**: A broader concept covering unemployment + time-related underemployment + potential) Tj
+T* (labour force \(discouraged workers\).) Tj
+ET
+BT
+/F2 10.5 Tf
+12.0749999999999993 TL
+0.118 0.161 0.231 rg
+54. 112.8899999999999864 Td
+(2.2 Usual Activity Status \(UAS\)) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.471 0.51 0.569 rg
+48. 25. Td
+(Confidential - Official Statistics Competency Framework \(Prototype\)) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.471 0.51 0.569 rg
+506.6399999999999864 25. Td
+(Page 1 of 2) Tj
+ET
+0.85 0.89 0.93 RG
+0.5 w
+48. 34. m
+547.2799999999999727 34. l
+S
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.471 0.51 0.569 rg
+48. 25. Td
+(Confidential - Official Statistics Competency Framework \(Prototype\)) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.471 0.51 0.569 rg
+506.6399999999999864 25. Td
+(Page 1 of 3) Tj
+ET
+0.85 0.89 0.93 RG
+0.5 w
+48. 34. m
+547.2799999999999727 34. l
+S
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.471 0.51 0.569 rg
+48. 25. Td
+(Confidential - Official Statistics Competency Framework \(Prototype\)) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.471 0.51 0.569 rg
+506.6399999999999864 25. Td
+(Page 1 of 4) Tj
+ET
+0.85 0.89 0.93 RG
+0.5 w
+48. 34. m
+547.2799999999999727 34. l
+S
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.471 0.51 0.569 rg
+48. 25. Td
+(Confidential - Official Statistics Competency Framework \(Prototype\)) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.471 0.51 0.569 rg
+506.6399999999999864 25. Td
+(Page 1 of 4) Tj
+ET
+0.85 0.89 0.93 RG
+0.5 w
+48. 34. m
+547.2799999999999727 34. l
+S
+endstream
+endobj
+5 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 6 0 R
+>>
+endobj
+6 0 obj
+<<
+/Length 6635
+>>
+stream
+0.8 w
+0.89 0.91 0.94 RG
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.392 0.451 0.51 rg
+48. 809.8899999999999864 Td
+(iGOT Sankhyashakti | MOSPI-C006: Employment-Unemployment Indicator Estimation) Tj
+ET
+0.85 0.89 0.93 RG
+0.5 w
+48. 803.8899999999999864 m
+547.2799999999999727 803.8899999999999864 l
+S
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.471 0.51 0.569 rg
+48. 25. Td
+(Confidential - Official Statistics Competency Framework \(Prototype\)) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.471 0.51 0.569 rg
+506.6399999999999864 25. Td
+(Page 2 of 2) Tj
+ET
+0.85 0.89 0.93 RG
+0.5 w
+48. 34. m
+547.2799999999999727 34. l
+S
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.471 0.51 0.569 rg
+54. 768.8899999999999864 Td
+(Determined on the basis of the major time criterion over a 365-day reference period. Categories:) Tj
+T* (- Workers \(self-employed: own account, employer, contributing family worker; salaried/regular; casual wage\)) Tj
+T* (- Unemployed \(seeking and available\)) Tj
+T* (- Out of labour force \(students, domestic duties, pensioners, disabled\)) Tj
+ET
+BT
+/F2 10.5 Tf
+12.0749999999999993 TL
+0.118 0.161 0.231 rg
+54. 706.8899999999999864 Td
+(2.3 Employment Status Categories) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.2 0.255 0.333 rg
+54. 691.8899999999999864 Td
+(**Self-employed**: Own-account workers \(work alone\), Employers \(hire others\), Contributing family workers \(unpaid) Tj
+T* (work in family enterprise\).) Tj
+T* () Tj
+T* (**Regular/Salaried employees**: Work for others on a regular basis and receive salary/wage.) Tj
+T* () Tj
+T* (**Casual wage labourers**: Work on a day-to-day or casual basis; do not have regular/long-term work contract.) Tj
+ET
+BT
+/F2 10.5 Tf
+12.0749999999999993 TL
+0.118 0.161 0.231 rg
+54. 603.8899999999999864 Td
+(2.4 Formal vs. Informal Employment) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.2 0.255 0.333 rg
+54. 588.8899999999999864 Td
+(Informal employment encompasses all jobs lacking basic social or legal protections or employment benefits-whether) Tj
+T* (in formal or informal sector enterprises. Estimated using PLFS variables on job contract type, social security) Tj
+T* (coverage, and written job contract. India has a very high share \(~90%\) of informal employment.) Tj
+ET
+BT
+/F2 13 Tf
+14.9499999999999993 TL
+0.059 0.09 0.165 rg
+48. 527.8899999999999864 Td
+(3. Estimation Methodology) Tj
+ET
+BT
+/F2 10.5 Tf
+12.0749999999999993 TL
+0.118 0.161 0.231 rg
+54. 509.8899999999999864 Td
+(3.1 Step 1: Weight Assignment) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.2 0.255 0.333 rg
+54. 494.8899999999999864 Td
+(Each sampled household is assigned a design weight = inverse of the probability of selection. Weights are calibrated) Tj
+T* (to known population totals \(from Census/population projections\) by state, sector \(rural/urban\), age group, and sex.) Tj
+T* (This corrects for differential non-response and improves precision.) Tj
+ET
+BT
+/F2 10.5 Tf
+12.0749999999999993 TL
+0.118 0.161 0.231 rg
+54. 445.8899999999999864 Td
+(3.2 Step 2: Activity Classification) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.2 0.255 0.333 rg
+54. 430.8899999999999864 Td
+(Each person 15+ years is classified into activity status categories \(worker/unemployed/OOLF\) based on:) Tj
+T* (- Usual Principal Activity \(UPA\): Major time in 365 days) Tj
+T* (- Usual Subsidiary Activity \(USA\): Minor time in 365 days) Tj
+T* (- Current Weekly Status \(CWS\): Activity in past 7 days) Tj
+T* (- Current Daily Status \(CDS\): Activity each day of reference week) Tj
+ET
+BT
+/F2 10.5 Tf
+12.0749999999999993 TL
+0.118 0.161 0.231 rg
+54. 355.8899999999999864 Td
+(3.3 Step 3: Indicator Computation) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.2 0.255 0.333 rg
+54. 340.8899999999999864 Td
+(Weighted estimates of employed, unemployed, and labour force are computed by summing person-weights across) Tj
+T* (relevant categories:) Tj
+T* () Tj
+T* ( E s t i m a t e d   E m p l o y e d   =  £   \( w e i g h t _ i   ×   e m p l o y e d _ i n d i c a t o r _ i \)) Tj
+T* () Tj
+T* (LFPR = \(Estimated Labour Force / Estimated Population 15+\) × 100) Tj
+T* (WPR = \(Estimated Employed / Estimated Population 15+\) × 100) Tj
+T* (UR = \(Estimated Unemployed / Estimated Labour Force\) × 100) Tj
+ET
+BT
+/F2 10.5 Tf
+12.0749999999999993 TL
+0.118 0.161 0.231 rg
+54. 226.8899999999999864 Td
+(3.4 Step 4: Standard Error Estimation) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.2 0.255 0.333 rg
+54. 211.8899999999999864 Td
+(Given the complex multi-stage stratified design, standard errors cannot be computed using simple random sampling) Tj
+T* (formulas. Methods used:) Tj
+T* (- Taylor linearisation \(approximate variance estimation\)) Tj
+T* (- Jackknife replication) Tj
+T* (- Bootstrap methods) Tj
+T* () Tj
+T* (Published estimates include standard errors and coefficients of variation \(CV\) to indicate reliability.) Tj
+ET
+BT
+/F2 10.5 Tf
+12.0749999999999993 TL
+0.118 0.161 0.231 rg
+54. 110.8899999999999864 Td
+(3.5 Step 5: Disaggregation) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.392 0.451 0.51 rg
+48. 809.8899999999999864 Td
+(iGOT Sankhyashakti | MOSPI-C006: Employment-Unemployment Indicator Estimation) Tj
+ET
+0.85 0.89 0.93 RG
+0.5 w
+48. 803.8899999999999864 m
+547.2799999999999727 803.8899999999999864 l
+S
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.471 0.51 0.569 rg
+48. 25. Td
+(Confidential - Official Statistics Competency Framework \(Prototype\)) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.471 0.51 0.569 rg
+506.6399999999999864 25. Td
+(Page 2 of 3) Tj
+ET
+0.85 0.89 0.93 RG
+0.5 w
+48. 34. m
+547.2799999999999727 34. l
+S
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.392 0.451 0.51 rg
+48. 809.8899999999999864 Td
+(iGOT Sankhyashakti | MOSPI-C006: Employment-Unemployment Indicator Estimation) Tj
+ET
+0.85 0.89 0.93 RG
+0.5 w
+48. 803.8899999999999864 m
+547.2799999999999727 803.8899999999999864 l
+S
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.471 0.51 0.569 rg
+48. 25. Td
+(Confidential - Official Statistics Competency Framework \(Prototype\)) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.471 0.51 0.569 rg
+506.6399999999999864 25. Td
+(Page 2 of 4) Tj
+ET
+0.85 0.89 0.93 RG
+0.5 w
+48. 34. m
+547.2799999999999727 34. l
+S
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.392 0.451 0.51 rg
+48. 809.8899999999999864 Td
+(iGOT Sankhyashakti | MOSPI-C006: Employment-Unemployment Indicator Estimation) Tj
+ET
+0.85 0.89 0.93 RG
+0.5 w
+48. 803.8899999999999864 m
+547.2799999999999727 803.8899999999999864 l
+S
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.471 0.51 0.569 rg
+48. 25. Td
+(Confidential - Official Statistics Competency Framework \(Prototype\)) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.471 0.51 0.569 rg
+506.6399999999999864 25. Td
+(Page 2 of 4) Tj
+ET
+0.85 0.89 0.93 RG
+0.5 w
+48. 34. m
+547.2799999999999727 34. l
+S
+endstream
+endobj
+7 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 8 0 R
+>>
+endobj
+8 0 obj
+<<
+/Length 6245
+>>
+stream
+0.5 w
+0.85 0.89 0.93 RG
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.392 0.451 0.51 rg
+48. 809.8899999999999864 Td
+(iGOT Sankhyashakti | MOSPI-C006: Employment-Unemployment Indicator Estimation) Tj
+ET
+0.85 0.89 0.93 RG
+0.5 w
+48. 803.8899999999999864 m
+547.2799999999999727 803.8899999999999864 l
+S
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.471 0.51 0.569 rg
+48. 25. Td
+(Confidential - Official Statistics Competency Framework \(Prototype\)) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.471 0.51 0.569 rg
+506.6399999999999864 25. Td
+(Page 3 of 3) Tj
+ET
+0.85 0.89 0.93 RG
+0.5 w
+48. 34. m
+547.2799999999999727 34. l
+S
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.471 0.51 0.569 rg
+54. 768.8899999999999864 Td
+(Indicators are published by:) Tj
+T* (- Sex \(male/female\)) Tj
+T* (- Sector \(rural/urban\)) Tj
+T* (- Age group \(15-29, 30-59, 60+\)) Tj
+T* (- State/UT \(for annual estimates, sample permitting\)) Tj
+T* (- Industry \(NIC 2008 sections\)) Tj
+T* (- Occupation \(NCO 2015 major groups\)) Tj
+T* (- Employment status \(self-employed/regular/casual\)) Tj
+ET
+BT
+/F2 13 Tf
+14.9499999999999993 TL
+0.059 0.09 0.165 rg
+48. 642.8899999999999864 Td
+(4. Administrative Data Sources for Employment Estimation) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.2 0.255 0.333 rg
+48. 624.8899999999999864 Td
+(PLFS household survey data is supplemented and validated against administrative data:) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.2 0.255 0.333 rg
+48. 603.8899999999999864 Td
+(**EPFO \(Employees' Provident Fund Organisation\)**: Monthly payroll data for organised-sector formal employment.) Tj
+T* (EPFO net new subscribers is used as a high-frequency indicator of formal employment creation.) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.2 0.255 0.333 rg
+48. 569.8899999999999864 Td
+(**ESIC \(Employees' State Insurance Corporation\)**: Covers workers in establishments with 10+ employees in notified) Tj
+T* (sectors. Net new ESIC registrations indicate formal employment trends.) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.2 0.255 0.333 rg
+48. 535.8899999999999864 Td
+(**NPS \(National Pension System\)**: Subscriber data from PFRDA for government and private sector formal) Tj
+T* (employees.) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.2 0.255 0.333 rg
+48. 501.8899999999999864 Td
+(**Payroll-based employment estimates**: MoSPI compiles quarterly employment estimates for 8 key sectors using) Tj
+T* (enterprise-level administrative data. This provides a supply-side \(employer\) perspective complementing the) Tj
+T* (demand-side PLFS.) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.2 0.255 0.333 rg
+48. 454.8899999999999864 Td
+(**CMIE \(Centre for Monitoring Indian Economy\)**: Consumer Pyramids Household Survey provides monthly labour) Tj
+T* (market data; used for comparison and validation but not official estimates.) Tj
+ET
+BT
+/F2 13 Tf
+14.9499999999999993 TL
+0.059 0.09 0.165 rg
+48. 408.8899999999999864 Td
+(5. Interpretation and Common Pitfalls) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.2 0.255 0.333 rg
+48. 390.8899999999999864 Td
+( * * P i t f a l l   1   -   C o m p a r i n g   a c r o s s   r e f e r e n c e   p e r i o d s * * :   L F P R   b a s e d   o n   U P S  "`   L F P R   b a s e d   o n   C W S  "`   L F P R   b a s e d   o n) Tj
+T* (CDS. Always state the reference period clearly.) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.2 0.255 0.333 rg
+48. 356.8899999999999864 Td
+(**Pitfall 2 - Female LFPR in India**: India's female LFPR appears low by international standards but household work) Tj
+T* (and subsistence activity are excluded. Using UPSS \(principal + subsidiary\) gives higher female WPR than UPS alone.) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.2 0.255 0.333 rg
+48. 322.8899999999999864 Td
+( * * P i t f a l l   3   -   L o w   u n e m p l o y m e n t  "`   f u l l   e m p l o y m e n t * * :   I n   t h e   a b s e n c e   o f   s o c i a l   p r o t e c t i o n ,   p e o p l e   c a n n o t   a f f o r d   t o   b e) Tj
+T* (unemployed; they accept low-quality, low-wage casual work. This is reflected in high CDS unemployment \(capturing) Tj
+T* (underemployment\).) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.2 0.255 0.333 rg
+48. 275.8899999999999864 Td
+(**Pitfall 4 - Urban vs. rural structural differences**: Urban labour markets are more formalised with higher WPR among) Tj
+T* (educated youth; rural labour markets have higher agricultural self-employment. Conflating the two distorts policy) Tj
+T* (conclusions.) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.2 0.255 0.333 rg
+48. 228.8899999999999864 Td
+(**Pitfall 5 - CV-based reliability**: Sub-group estimates \(e.g., by state and industry simultaneously\) may have high CVs) Tj
+T* (due to small cell sizes. Treat such estimates with caution and report standard errors alongside point estimates.) Tj
+ET
+BT
+/F2 13 Tf
+14.9499999999999993 TL
+0.059 0.09 0.165 rg
+48. 182.8899999999999864 Td
+(6. Practical Example: Computing State-level LFPR) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.2 0.255 0.333 rg
+48. 164.8899999999999864 Td
+(Hypothetical State Y, Annual PLFS data, UPS reference period, persons aged 15+:) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.392 0.451 0.51 rg
+48. 809.8899999999999864 Td
+(iGOT Sankhyashakti | MOSPI-C006: Employment-Unemployment Indicator Estimation) Tj
+ET
+0.85 0.89 0.93 RG
+0.5 w
+48. 803.8899999999999864 m
+547.2799999999999727 803.8899999999999864 l
+S
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.471 0.51 0.569 rg
+48. 25. Td
+(Confidential - Official Statistics Competency Framework \(Prototype\)) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.471 0.51 0.569 rg
+506.6399999999999864 25. Td
+(Page 3 of 4) Tj
+ET
+0.85 0.89 0.93 RG
+0.5 w
+48. 34. m
+547.2799999999999727 34. l
+S
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.392 0.451 0.51 rg
+48. 809.8899999999999864 Td
+(iGOT Sankhyashakti | MOSPI-C006: Employment-Unemployment Indicator Estimation) Tj
+ET
+0.85 0.89 0.93 RG
+0.5 w
+48. 803.8899999999999864 m
+547.2799999999999727 803.8899999999999864 l
+S
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.471 0.51 0.569 rg
+48. 25. Td
+(Confidential - Official Statistics Competency Framework \(Prototype\)) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.471 0.51 0.569 rg
+506.6399999999999864 25. Td
+(Page 3 of 4) Tj
+ET
+0.85 0.89 0.93 RG
+0.5 w
+48. 34. m
+547.2799999999999727 34. l
+S
+endstream
+endobj
+9 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 10 0 R
+>>
+endobj
+10 0 obj
+<<
+/Length 4905
+>>
+stream
+0.5 w
+0.85 0.89 0.93 RG
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.392 0.451 0.51 rg
+48. 809.8899999999999864 Td
+(iGOT Sankhyashakti | MOSPI-C006: Employment-Unemployment Indicator Estimation) Tj
+ET
+0.85 0.89 0.93 RG
+0.5 w
+48. 803.8899999999999864 m
+547.2799999999999727 803.8899999999999864 l
+S
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.471 0.51 0.569 rg
+48. 25. Td
+(Confidential - Official Statistics Competency Framework \(Prototype\)) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.471 0.51 0.569 rg
+506.6399999999999864 25. Td
+(Page 4 of 4) Tj
+ET
+0.85 0.89 0.93 RG
+0.5 w
+48. 34. m
+547.2799999999999727 34. l
+S
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.471 0.51 0.569 rg
+48. 768.8899999999999864 Td
+(| Category | Persons \(weighted, '000s\) |) Tj
+T* (|---|---|) Tj
+T* (| Own-account workers | 8,500 |) Tj
+T* (| Employers | 400 |) Tj
+T* (| Contributing family workers | 3,200 |) Tj
+T* (| Regular/salaried employees | 6,100 |) Tj
+T* (| Casual wage labourers | 4,800 |) Tj
+T* (| **Total Employed** | **23,000** |) Tj
+T* (| Unemployed \(seeking + available\) | 1,800 |) Tj
+T* (| **Labour Force** | **24,800** |) Tj
+T* (| Out of Labour Force \(students, domestic duties, etc.\) | 15,200 |) Tj
+T* (| **Population 15+** | **40,000** |) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.471 0.51 0.569 rg
+48. 604.8899999999999864 Td
+(LFPR = \(24,800 / 40,000\) × 100 = **62.0%**) Tj
+T* (WPR = \(23,000 / 40,000\) × 100 = **57.5%**) Tj
+T* (Unemployment Rate = \(1,800 / 24,800\) × 100 = **7.3%**) Tj
+ET
+BT
+/F2 13 Tf
+14.9499999999999993 TL
+0.059 0.09 0.165 rg
+48. 545.8899999999999864 Td
+(7. Data Quality Considerations) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.2 0.255 0.333 rg
+48. 527.8899999999999864 Td
+(- **Proxy reporting**: In PLFS, household head or one informed member may report for all household members,) Tj
+T* (causing classification errors for women and youth.) Tj
+T* (- **Misclassification of contributing family workers**: Workers in family enterprises may be reported as homemakers if) Tj
+T* (they don't perceive their work as "employment.") Tj
+T* (- **Seasonal bias**: If fieldwork is concentrated in a particular season, annual estimates may not be representative of) Tj
+T* (the full year.) Tj
+T* (- **Response burden**: Quarterly follow-up for panel households can lead to respondent fatigue and attrition.) Tj
+T* (- **Comparability over time**: Changes in survey design, questionnaire, or processing can break time series. Document) Tj
+T* (methodological changes in metadata.) Tj
+ET
+BT
+/F2 13 Tf
+14.9499999999999993 TL
+0.059 0.09 0.165 rg
+48. 390.8899999999999864 Td
+(8. Key Learning Points) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.2 0.255 0.333 rg
+48. 372.8899999999999864 Td
+(1. Employment-unemployment indicators are estimated from PLFS using weighted survey data with complex design) Tj
+T* (adjustments.) Tj
+T* (2. The three reference periods \(UPS, CWS, CDS\) produce different indicator values; CDS gives the broadest measure) Tj
+T* (of underemployment.) Tj
+T* (3. ILO/ICLS 2013 definitions require all three conditions \(without work, available, seeking\) for unemployment) Tj
+T* (classification.) Tj
+T* (4. Standard errors must be computed using methods appropriate for complex survey designs \(Taylor linearisation,) Tj
+T* (jackknife, bootstrap\).) Tj
+T* (5. Administrative data \(EPFO, ESIC, NPS\) supplement survey estimates for high-frequency formal employment) Tj
+T* (monitoring.) Tj
+T* (6. Low unemployment rates in India often reflect disguised underemployment rather than full employment.) Tj
+ET
+BT
+/F2 13 Tf
+14.9499999999999993 TL
+0.059 0.09 0.165 rg
+48. 209.8899999999999864 Td
+(9. Learning Outcomes) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.2 0.255 0.333 rg
+48. 191.8899999999999864 Td
+(On completing this material, you should be able to:) Tj
+T* (- Apply ILO/ICLS 2013 definitions to classify persons into employment status categories.) Tj
+T* (- Explain the step-by-step methodology for estimating LFPR, WPR, and unemployment rate from PLFS data.) Tj
+T* (- Compute employment indicators from survey data using appropriate weights.) Tj
+T* (- Identify and account for complex survey design in standard error estimation.) Tj
+T* (- Describe administrative data sources used to validate and supplement PLFS-based estimates.) Tj
+T* (- Avoid common pitfalls in interpreting India's employment-unemployment statistics.) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.392 0.451 0.51 rg
+48. 809.8899999999999864 Td
+(iGOT Sankhyashakti | MOSPI-C006: Employment-Unemployment Indicator Estimation) Tj
+ET
+0.85 0.89 0.93 RG
+0.5 w
+48. 803.8899999999999864 m
+547.2799999999999727 803.8899999999999864 l
+S
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.471 0.51 0.569 rg
+48. 25. Td
+(Confidential - Official Statistics Competency Framework \(Prototype\)) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.471 0.51 0.569 rg
+506.6399999999999864 25. Td
+(Page 4 of 4) Tj
+ET
+0.85 0.89 0.93 RG
+0.5 w
+48. 34. m
+547.2799999999999727 34. l
+S
+endstream
+endobj
+1 0 obj
+<</Type /Pages
+/Kids [3 0 R 5 0 R 7 0 R 9 0 R ]
+/Count 4
+>>
+endobj
+11 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+12 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+13 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-Oblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+14 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-BoldOblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+15 0 obj
+<<
+/Type /Font
+/BaseFont /Courier
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+16 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+17 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-Oblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+18 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-BoldOblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+19 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Roman
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+20 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+21 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Italic
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+22 0 obj
+<<
+/Type /Font
+/BaseFont /Times-BoldItalic
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+23 0 obj
+<<
+/Type /Font
+/BaseFont /ZapfDingbats
+/Subtype /Type1
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+24 0 obj
+<<
+/Type /Font
+/BaseFont /Symbol
+/Subtype /Type1
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+2 0 obj
+<<
+/ProcSet [/PDF /Text /ImageB /ImageC /ImageI]
+/Font <<
+/F1 11 0 R
+/F2 12 0 R
+/F3 13 0 R
+/F4 14 0 R
+/F5 15 0 R
+/F6 16 0 R
+/F7 17 0 R
+/F8 18 0 R
+/F9 19 0 R
+/F10 20 0 R
+/F11 21 0 R
+/F12 22 0 R
+/F13 23 0 R
+/F14 24 0 R
+>>
+/XObject <<
+>>
+>>
+endobj
+25 0 obj
+<<
+/Producer (jsPDF 4.2.1)
+/CreationDate (D:20260913060306+05'30')
+>>
+endobj
+26 0 obj
+<<
+/Type /Catalog
+/Pages 1 0 R
+/OpenAction [3 0 R /FitH null]
+/PageLayout /OneColumn
+>>
+endobj
+xref
+0 27
+0000000000 65535 f 
+0000025373 00000 n 
+0000027213 00000 n 
+0000000015 00000 n 
+0000000152 00000 n 
+0000007019 00000 n 
+0000007156 00000 n 
+0000013843 00000 n 
+0000013980 00000 n 
+0000020277 00000 n 
+0000020415 00000 n 
+0000025448 00000 n 
+0000025574 00000 n 
+0000025705 00000 n 
+0000025839 00000 n 
+0000025977 00000 n 
+0000026101 00000 n 
+0000026230 00000 n 
+0000026362 00000 n 
+0000026498 00000 n 
+0000026626 00000 n 
+0000026753 00000 n 
+0000026882 00000 n 
+0000027015 00000 n 
+0000027117 00000 n 
+0000027466 00000 n 
+0000027552 00000 n 
+trailer
+<<
+/Size 27
+/Root 26 0 R
+/Info 25 0 R
+/ID [ <BD382A4DC21BFA1DC70F0004F738EDA3> <BD382A4DC21BFA1DC70F0004F738EDA3> ]
+>>
+startxref
+27656
+%%EOF

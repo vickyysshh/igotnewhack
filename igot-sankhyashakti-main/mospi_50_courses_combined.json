@@ -1,0 +1,1171 @@
+[
+  {
+    "id": "MOSPI-C001",
+    "title": "Fundamentals of National Income Accounting",
+    "primary_statistical_domain": "National Accounts",
+    "competency_type": "Domain",
+    "target_designation": "Junior Statistical Officer",
+    "target_organisation": "Social Statistics Division",
+    "ministry": "Ministry of Statistics & Programme Implementation",
+    "provider": "IIPS",
+    "duration_hours": 4,
+    "level": "Advanced",
+    "language": [
+      "English",
+      "Hindi"
+    ],
+    "rating": 4.5,
+    "enrolled_count": 18670,
+    "recommended_experience": "3-5 years",
+    "competency_tags": [
+      "National Accounts",
+      "Domain"
+    ],
+    "certification": true
+  },
+  {
+    "id": "MOSPI-C002",
+    "title": "GDP Estimation Methodology (GVA Approach)",
+    "primary_statistical_domain": "National Accounts",
+    "competency_type": "Domain",
+    "target_designation": "Junior Statistical Officer",
+    "target_organisation": "National Statistical Systems Training Academy (NSSTA)",
+    "ministry": "Ministry of Statistics & Programme Implementation",
+    "provider": "NSSTA",
+    "duration_hours": 3,
+    "level": "Advanced",
+    "language": [
+      "English",
+      "Hindi"
+    ],
+    "rating": 4.4,
+    "enrolled_count": 18656,
+    "recommended_experience": "3-5 years",
+    "competency_tags": [
+      "National Accounts",
+      "Domain"
+    ],
+    "certification": true
+  },
+  {
+    "id": "MOSPI-C003",
+    "title": "Compiling State-Level GSDP Estimates",
+    "primary_statistical_domain": "National Accounts",
+    "competency_type": "Domain",
+    "target_designation": "Junior Statistical Officer",
+    "target_organisation": "Data Informatics & Innovation Division",
+    "ministry": "Ministry of Statistics & Programme Implementation",
+    "provider": "MoSPI Academy",
+    "duration_hours": 5,
+    "level": "Intermediate",
+    "language": [
+      "English",
+      "Hindi"
+    ],
+    "rating": 4.0,
+    "enrolled_count": 11829,
+    "recommended_experience": "20+ years",
+    "competency_tags": [
+      "National Accounts",
+      "Domain"
+    ],
+    "certification": true
+  },
+  {
+    "id": "MOSPI-C004",
+    "title": "System of National Accounts (SNA) 2008 Framework",
+    "primary_statistical_domain": "National Accounts",
+    "competency_type": "Domain",
+    "target_designation": "Assistant Director",
+    "target_organisation": "Price Statistics Division",
+    "ministry": "Ministry of Statistics & Programme Implementation",
+    "provider": "IIPS",
+    "duration_hours": 12,
+    "level": "Beginner",
+    "language": [
+      "English",
+      "Hindi"
+    ],
+    "rating": 4.4,
+    "enrolled_count": 13203,
+    "recommended_experience": "16-20 years",
+    "competency_tags": [
+      "National Accounts",
+      "Domain"
+    ],
+    "certification": true
+  },
+  {
+    "id": "MOSPI-C005",
+    "title": "Periodic Labour Force Survey (PLFS) Concepts",
+    "primary_statistical_domain": "Labour Statistics",
+    "competency_type": "Digital",
+    "target_designation": "Statistical Investigator Grade I",
+    "target_organisation": "National Statistical Systems Training Academy (NSSTA)",
+    "ministry": "Ministry of Statistics & Programme Implementation",
+    "provider": "IGNOU",
+    "duration_hours": 6,
+    "level": "Beginner",
+    "language": [
+      "Hindi"
+    ],
+    "rating": 4.8,
+    "enrolled_count": 13255,
+    "recommended_experience": "0-2 years",
+    "competency_tags": [
+      "Labour Statistics",
+      "Digital"
+    ],
+    "certification": true
+  },
+  {
+    "id": "MOSPI-C006",
+    "title": "Employment-Unemployment Indicator Estimation",
+    "primary_statistical_domain": "Labour Statistics",
+    "competency_type": "Domain",
+    "target_designation": "Senior Statistical Officer",
+    "target_organisation": "Price Statistics Division",
+    "ministry": "Ministry of Statistics & Programme Implementation",
+    "provider": "IGNOU",
+    "duration_hours": 4,
+    "level": "Intermediate",
+    "language": [
+      "English"
+    ],
+    "rating": 4.5,
+    "enrolled_count": 6407,
+    "recommended_experience": "6-10 years",
+    "competency_tags": [
+      "Labour Statistics",
+      "Domain"
+    ],
+    "certification": true
+  },
+  {
+    "id": "MOSPI-C007",
+    "title": "Wage and Earnings Statistics Compilation",
+    "primary_statistical_domain": "Labour Statistics",
+    "competency_type": "Functional",
+    "target_designation": "Joint Director",
+    "target_organisation": "Economic Statistics Division",
+    "ministry": "Ministry of Statistics & Programme Implementation",
+    "provider": "ISI Kolkata",
+    "duration_hours": 8,
+    "level": "Advanced",
+    "language": [
+      "English"
+    ],
+    "rating": 4.7,
+    "enrolled_count": 2632,
+    "recommended_experience": "6-10 years",
+    "competency_tags": [
+      "Labour Statistics",
+      "Functional"
+    ],
+    "certification": true
+  },
+  {
+    "id": "MOSPI-C008",
+    "title": "Consumer Price Index (CPI) Construction",
+    "primary_statistical_domain": "Price Statistics",
+    "competency_type": "Domain",
+    "target_designation": "Deputy Director",
+    "target_organisation": "Social Statistics Division",
+    "ministry": "Ministry of Statistics & Programme Implementation",
+    "provider": "IGNOU",
+    "duration_hours": 8,
+    "level": "Advanced",
+    "language": [
+      "Hindi"
+    ],
+    "rating": 4.0,
+    "enrolled_count": 17158,
+    "recommended_experience": "0-2 years",
+    "competency_tags": [
+      "Price Statistics",
+      "Domain"
+    ],
+    "certification": true
+  },
+  {
+    "id": "MOSPI-C009",
+    "title": "Wholesale Price Index (WPI) Methodology",
+    "primary_statistical_domain": "Price Statistics",
+    "competency_type": "Domain",
+    "target_designation": "Senior Statistical Officer",
+    "target_organisation": "Social Statistics Division",
+    "ministry": "Ministry of Statistics & Programme Implementation",
+    "provider": "NCAER",
+    "duration_hours": 7,
+    "level": "Advanced",
+    "language": [
+      "English",
+      "Hindi"
+    ],
+    "rating": 4.6,
+    "enrolled_count": 14838,
+    "recommended_experience": "3-5 years",
+    "competency_tags": [
+      "Price Statistics",
+      "Domain"
+    ],
+    "certification": false
+  },
+  {
+    "id": "MOSPI-C010",
+    "title": "Index Number Theory for Price Statistics",
+    "primary_statistical_domain": "Price Statistics",
+    "competency_type": "Domain",
+    "target_designation": "Statistical Investigator Grade I",
+    "target_organisation": "Data Informatics & Innovation Division",
+    "ministry": "Ministry of Statistics & Programme Implementation",
+    "provider": "IGNOU",
+    "duration_hours": 4,
+    "level": "Beginner",
+    "language": [
+      "English",
+      "Hindi"
+    ],
+    "rating": 4.0,
+    "enrolled_count": 6042,
+    "recommended_experience": "16-20 years",
+    "competency_tags": [
+      "Price Statistics",
+      "Domain"
+    ],
+    "certification": false
+  },
+  {
+    "id": "MOSPI-C011",
+    "title": "Crop Estimation Survey Techniques",
+    "primary_statistical_domain": "Agricultural Statistics",
+    "competency_type": "Digital",
+    "target_designation": "Deputy Director",
+    "target_organisation": "Economic Statistics Division",
+    "ministry": "Ministry of Statistics & Programme Implementation",
+    "provider": "IIPS",
+    "duration_hours": 3,
+    "level": "Advanced",
+    "language": [
+      "Hindi"
+    ],
+    "rating": 4.5,
+    "enrolled_count": 4553,
+    "recommended_experience": "16-20 years",
+    "competency_tags": [
+      "Agricultural Statistics",
+      "Digital"
+    ],
+    "certification": true
+  },
+  {
+    "id": "MOSPI-C012",
+    "title": "Agricultural Census Data Collection Methods",
+    "primary_statistical_domain": "Agricultural Statistics",
+    "competency_type": "Domain",
+    "target_designation": "Assistant Director",
+    "target_organisation": "National Statistical Systems Training Academy (NSSTA)",
+    "ministry": "Ministry of Statistics & Programme Implementation",
+    "provider": "MoSPI Academy",
+    "duration_hours": 3,
+    "level": "Intermediate",
+    "language": [
+      "English"
+    ],
+    "rating": 4.8,
+    "enrolled_count": 9430,
+    "recommended_experience": "6-10 years",
+    "competency_tags": [
+      "Agricultural Statistics",
+      "Domain"
+    ],
+    "certification": false
+  },
+  {
+    "id": "MOSPI-C013",
+    "title": "Land Use Statistics and Remote Sensing",
+    "primary_statistical_domain": "Agricultural Statistics",
+    "competency_type": "Domain",
+    "target_designation": "Statistical Investigator Grade II",
+    "target_organisation": "Subordinate Statistical Service",
+    "ministry": "Ministry of Statistics & Programme Implementation",
+    "provider": "IIPS",
+    "duration_hours": 5,
+    "level": "Intermediate",
+    "language": [
+      "Hindi"
+    ],
+    "rating": 4.4,
+    "enrolled_count": 18178,
+    "recommended_experience": "16-20 years",
+    "competency_tags": [
+      "Agricultural Statistics",
+      "Domain"
+    ],
+    "certification": false
+  },
+  {
+    "id": "MOSPI-C014",
+    "title": "Index of Industrial Production (IIP) Compilation",
+    "primary_statistical_domain": "Industrial Statistics",
+    "competency_type": "Digital",
+    "target_designation": "Joint Director",
+    "target_organisation": "National Statistical Office (NSO)",
+    "ministry": "Ministry of Statistics & Programme Implementation",
+    "provider": "IGNOU",
+    "duration_hours": 3,
+    "level": "Beginner",
+    "language": [
+      "English"
+    ],
+    "rating": 4.1,
+    "enrolled_count": 19391,
+    "recommended_experience": "0-2 years",
+    "competency_tags": [
+      "Industrial Statistics",
+      "Digital"
+    ],
+    "certification": false
+  },
+  {
+    "id": "MOSPI-C015",
+    "title": "Annual Survey of Industries (ASI) Methodology",
+    "primary_statistical_domain": "Industrial Statistics",
+    "competency_type": "Domain",
+    "target_designation": "Statistical Officer",
+    "target_organisation": "Subordinate Statistical Service",
+    "ministry": "Ministry of Statistics & Programme Implementation",
+    "provider": "NCAER",
+    "duration_hours": 5,
+    "level": "Intermediate",
+    "language": [
+      "English"
+    ],
+    "rating": 4.1,
+    "enrolled_count": 20676,
+    "recommended_experience": "3-5 years",
+    "competency_tags": [
+      "Industrial Statistics",
+      "Domain"
+    ],
+    "certification": true
+  },
+  {
+    "id": "MOSPI-C016",
+    "title": "Health and Education Indicator Frameworks",
+    "primary_statistical_domain": "Social Statistics",
+    "competency_type": "Behavioral",
+    "target_designation": "Statistical Investigator Grade II",
+    "target_organisation": "Economic Statistics Division",
+    "ministry": "Ministry of Statistics & Programme Implementation",
+    "provider": "NIC",
+    "duration_hours": 12,
+    "level": "Advanced",
+    "language": [
+      "English"
+    ],
+    "rating": 3.9,
+    "enrolled_count": 8162,
+    "recommended_experience": "20+ years",
+    "competency_tags": [
+      "Social Statistics",
+      "Behavioral"
+    ],
+    "certification": true
+  },
+  {
+    "id": "MOSPI-C017",
+    "title": "Household Consumption Expenditure Survey Basics",
+    "primary_statistical_domain": "Social Statistics",
+    "competency_type": "Domain",
+    "target_designation": "Statistical Investigator Grade I",
+    "target_organisation": "National Statistical Office (NSO)",
+    "ministry": "Ministry of Statistics & Programme Implementation",
+    "provider": "NIC",
+    "duration_hours": 4,
+    "level": "Beginner",
+    "language": [
+      "English"
+    ],
+    "rating": 4.8,
+    "enrolled_count": 11627,
+    "recommended_experience": "0-2 years",
+    "competency_tags": [
+      "Social Statistics",
+      "Domain"
+    ],
+    "certification": true
+  },
+  {
+    "id": "MOSPI-C018",
+    "title": "Gender Statistics and Data Disaggregation",
+    "primary_statistical_domain": "Social Statistics",
+    "competency_type": "Domain",
+    "target_designation": "Joint Director",
+    "target_organisation": "National Accounts Division",
+    "ministry": "Ministry of Statistics & Programme Implementation",
+    "provider": "MoSPI Academy",
+    "duration_hours": 12,
+    "level": "Advanced",
+    "language": [
+      "English"
+    ],
+    "rating": 4.1,
+    "enrolled_count": 16298,
+    "recommended_experience": "16-20 years",
+    "competency_tags": [
+      "Social Statistics",
+      "Domain"
+    ],
+    "certification": false
+  },
+  {
+    "id": "MOSPI-C019",
+    "title": "National Sample Survey (NSS) Design Principles",
+    "primary_statistical_domain": "Economic Statistics",
+    "competency_type": "Domain",
+    "target_designation": "Statistical Officer",
+    "target_organisation": "Economic Statistics Division",
+    "ministry": "Ministry of Statistics & Programme Implementation",
+    "provider": "IIPS",
+    "duration_hours": 3,
+    "level": "Intermediate",
+    "language": [
+      "Hindi"
+    ],
+    "rating": 4.5,
+    "enrolled_count": 4024,
+    "recommended_experience": "6-10 years",
+    "competency_tags": [
+      "Economic Statistics",
+      "Domain"
+    ],
+    "certification": true
+  },
+  {
+    "id": "MOSPI-C020",
+    "title": "Economic Census Data Processing",
+    "primary_statistical_domain": "Economic Statistics",
+    "competency_type": "Domain",
+    "target_designation": "Statistical Officer",
+    "target_organisation": "National Accounts Division",
+    "ministry": "Ministry of Statistics & Programme Implementation",
+    "provider": "IGNOU",
+    "duration_hours": 5,
+    "level": "Intermediate",
+    "language": [
+      "English"
+    ],
+    "rating": 4.3,
+    "enrolled_count": 9927,
+    "recommended_experience": "3-5 years",
+    "competency_tags": [
+      "Economic Statistics",
+      "Domain"
+    ],
+    "certification": true
+  },
+  {
+    "id": "MOSPI-C021",
+    "title": "Input-Output Table Construction",
+    "primary_statistical_domain": "Economic Statistics",
+    "competency_type": "Domain",
+    "target_designation": "Director",
+    "target_organisation": "National Statistical Systems Training Academy (NSSTA)",
+    "ministry": "Ministry of Statistics & Programme Implementation",
+    "provider": "NCAER",
+    "duration_hours": 6,
+    "level": "Beginner",
+    "language": [
+      "English",
+      "Hindi"
+    ],
+    "rating": 4.0,
+    "enrolled_count": 16713,
+    "recommended_experience": "0-2 years",
+    "competency_tags": [
+      "Economic Statistics",
+      "Domain"
+    ],
+    "certification": true
+  },
+  {
+    "id": "MOSPI-C022",
+    "title": "Sampling Design for Large-Scale Surveys",
+    "primary_statistical_domain": "Survey Methodology",
+    "competency_type": "Digital",
+    "target_designation": "Senior Statistical Officer",
+    "target_organisation": "Economic Statistics Division",
+    "ministry": "Ministry of Statistics & Programme Implementation",
+    "provider": "NSSTA",
+    "duration_hours": 7,
+    "level": "Intermediate",
+    "language": [
+      "English",
+      "Hindi"
+    ],
+    "rating": 4.3,
+    "enrolled_count": 19011,
+    "recommended_experience": "0-2 years",
+    "competency_tags": [
+      "Survey Methodology",
+      "Digital"
+    ],
+    "certification": true
+  },
+  {
+    "id": "MOSPI-C023",
+    "title": "Questionnaire Design and Pretesting",
+    "primary_statistical_domain": "Survey Methodology",
+    "competency_type": "Domain",
+    "target_designation": "Statistical Investigator Grade I",
+    "target_organisation": "Social Statistics Division",
+    "ministry": "Ministry of Statistics & Programme Implementation",
+    "provider": "ISI Kolkata",
+    "duration_hours": 8,
+    "level": "Advanced",
+    "language": [
+      "Hindi"
+    ],
+    "rating": 3.9,
+    "enrolled_count": 19942,
+    "recommended_experience": "3-5 years",
+    "competency_tags": [
+      "Survey Methodology",
+      "Domain"
+    ],
+    "certification": true
+  },
+  {
+    "id": "MOSPI-C024",
+    "title": "Non-Sampling Error Control in Field Surveys",
+    "primary_statistical_domain": "Survey Methodology",
+    "competency_type": "Domain",
+    "target_designation": "Junior Statistical Officer",
+    "target_organisation": "Subordinate Statistical Service",
+    "ministry": "Ministry of Statistics & Programme Implementation",
+    "provider": "ISI Kolkata",
+    "duration_hours": 4,
+    "level": "Advanced",
+    "language": [
+      "Hindi"
+    ],
+    "rating": 4.5,
+    "enrolled_count": 8507,
+    "recommended_experience": "0-2 years",
+    "competency_tags": [
+      "Survey Methodology",
+      "Domain"
+    ],
+    "certification": true
+  },
+  {
+    "id": "MOSPI-C025",
+    "title": "CAPI Tools for Field Data Collection",
+    "primary_statistical_domain": "Survey Methodology",
+    "competency_type": "Digital",
+    "target_designation": "Junior Statistical Officer",
+    "target_organisation": "National Statistical Systems Training Academy (NSSTA)",
+    "ministry": "Ministry of Statistics & Programme Implementation",
+    "provider": "NIC",
+    "duration_hours": 6,
+    "level": "Intermediate",
+    "language": [
+      "English",
+      "Hindi"
+    ],
+    "rating": 4.5,
+    "enrolled_count": 11095,
+    "recommended_experience": "11-15 years",
+    "competency_tags": [
+      "Survey Methodology",
+      "Digital"
+    ],
+    "certification": true
+  },
+  {
+    "id": "MOSPI-C026",
+    "title": "SDG National Indicator Framework Overview",
+    "primary_statistical_domain": "SDG Indicators",
+    "competency_type": "Domain",
+    "target_designation": "Statistical Investigator Grade II",
+    "target_organisation": "Field Operations Division",
+    "ministry": "Ministry of Statistics & Programme Implementation",
+    "provider": "ISI Kolkata",
+    "duration_hours": 12,
+    "level": "Beginner",
+    "language": [
+      "English"
+    ],
+    "rating": 4.5,
+    "enrolled_count": 19248,
+    "recommended_experience": "6-10 years",
+    "competency_tags": [
+      "SDG Indicators",
+      "Domain"
+    ],
+    "certification": false
+  },
+  {
+    "id": "MOSPI-C027",
+    "title": "Monitoring SDG Progress at State Level",
+    "primary_statistical_domain": "SDG Indicators",
+    "competency_type": "Domain",
+    "target_designation": "Director",
+    "target_organisation": "Social Statistics Division",
+    "ministry": "Ministry of Statistics & Programme Implementation",
+    "provider": "NIC",
+    "duration_hours": 8,
+    "level": "Beginner",
+    "language": [
+      "Hindi"
+    ],
+    "rating": 4.1,
+    "enrolled_count": 15158,
+    "recommended_experience": "3-5 years",
+    "competency_tags": [
+      "SDG Indicators",
+      "Domain"
+    ],
+    "certification": false
+  },
+  {
+    "id": "MOSPI-C028",
+    "title": "Data Gaps and SDG Reporting Standards",
+    "primary_statistical_domain": "SDG Indicators",
+    "competency_type": "Digital",
+    "target_designation": "Director",
+    "target_organisation": "National Statistical Office (NSO)",
+    "ministry": "Ministry of Statistics & Programme Implementation",
+    "provider": "MoSPI Academy",
+    "duration_hours": 4,
+    "level": "Advanced",
+    "language": [
+      "English"
+    ],
+    "rating": 4.8,
+    "enrolled_count": 5200,
+    "recommended_experience": "20+ years",
+    "competency_tags": [
+      "SDG Indicators",
+      "Digital"
+    ],
+    "certification": true
+  },
+  {
+    "id": "MOSPI-C029",
+    "title": "Statistical Data Quality Assessment Framework",
+    "primary_statistical_domain": "Data Quality & Standards",
+    "competency_type": "Domain",
+    "target_designation": "Statistical Investigator Grade II",
+    "target_organisation": "Social Statistics Division",
+    "ministry": "Ministry of Statistics & Programme Implementation",
+    "provider": "ISI Kolkata",
+    "duration_hours": 6,
+    "level": "Intermediate",
+    "language": [
+      "English",
+      "Hindi"
+    ],
+    "rating": 4.6,
+    "enrolled_count": 9450,
+    "recommended_experience": "16-20 years",
+    "competency_tags": [
+      "Data Quality & Standards",
+      "Domain"
+    ],
+    "certification": true
+  },
+  {
+    "id": "MOSPI-C030",
+    "title": "Metadata Standards for Official Statistics",
+    "primary_statistical_domain": "Data Quality & Standards",
+    "competency_type": "Domain",
+    "target_designation": "Statistical Officer",
+    "target_organisation": "Economic Statistics Division",
+    "ministry": "Ministry of Statistics & Programme Implementation",
+    "provider": "NSSTA",
+    "duration_hours": 5,
+    "level": "Intermediate",
+    "language": [
+      "English",
+      "Hindi"
+    ],
+    "rating": 4.5,
+    "enrolled_count": 9383,
+    "recommended_experience": "6-10 years",
+    "competency_tags": [
+      "Data Quality & Standards",
+      "Domain"
+    ],
+    "certification": true
+  },
+  {
+    "id": "MOSPI-C031",
+    "title": "SDMX Standards for Data Exchange",
+    "primary_statistical_domain": "Data Quality & Standards",
+    "competency_type": "Domain",
+    "target_designation": "Director",
+    "target_organisation": "National Statistical Office (NSO)",
+    "ministry": "Ministry of Statistics & Programme Implementation",
+    "provider": "IIM Ahmedabad",
+    "duration_hours": 5,
+    "level": "Advanced",
+    "language": [
+      "English"
+    ],
+    "rating": 4.4,
+    "enrolled_count": 12898,
+    "recommended_experience": "0-2 years",
+    "competency_tags": [
+      "Data Quality & Standards",
+      "Domain"
+    ],
+    "certification": true
+  },
+  {
+    "id": "MOSPI-C032",
+    "title": "Effective Dissemination of Official Statistics",
+    "primary_statistical_domain": "Data Dissemination",
+    "competency_type": "Domain",
+    "target_designation": "Senior Statistical Officer",
+    "target_organisation": "National Statistical Office (NSO)",
+    "ministry": "Ministry of Statistics & Programme Implementation",
+    "provider": "IIM Ahmedabad",
+    "duration_hours": 8,
+    "level": "Beginner",
+    "language": [
+      "English",
+      "Hindi"
+    ],
+    "rating": 4.0,
+    "enrolled_count": 8976,
+    "recommended_experience": "6-10 years",
+    "competency_tags": [
+      "Data Dissemination",
+      "Domain"
+    ],
+    "certification": true
+  },
+  {
+    "id": "MOSPI-C033",
+    "title": "Building Public Data Dashboards for MoSPI",
+    "primary_statistical_domain": "Data Dissemination",
+    "competency_type": "Functional",
+    "target_designation": "Senior Statistical Officer",
+    "target_organisation": "National Accounts Division",
+    "ministry": "Ministry of Statistics & Programme Implementation",
+    "provider": "IIM Ahmedabad",
+    "duration_hours": 3,
+    "level": "Intermediate",
+    "language": [
+      "English",
+      "Hindi"
+    ],
+    "rating": 4.0,
+    "enrolled_count": 11685,
+    "recommended_experience": "3-5 years",
+    "competency_tags": [
+      "Data Dissemination",
+      "Functional"
+    ],
+    "certification": false
+  },
+  {
+    "id": "MOSPI-C034",
+    "title": "Open Government Data (OGD) Platform Practices",
+    "primary_statistical_domain": "Data Dissemination",
+    "competency_type": "Domain",
+    "target_designation": "Statistical Investigator Grade II",
+    "target_organisation": "Data Informatics & Innovation Division",
+    "ministry": "Ministry of Statistics & Programme Implementation",
+    "provider": "NIC",
+    "duration_hours": 12,
+    "level": "Beginner",
+    "language": [
+      "English"
+    ],
+    "rating": 4.0,
+    "enrolled_count": 15883,
+    "recommended_experience": "20+ years",
+    "competency_tags": [
+      "Data Dissemination",
+      "Domain"
+    ],
+    "certification": true
+  },
+  {
+    "id": "MOSPI-C035",
+    "title": "Python for Official Statistics Processing",
+    "primary_statistical_domain": "Data Science & Analytics",
+    "competency_type": "Domain",
+    "target_designation": "Junior Statistical Officer",
+    "target_organisation": "National Accounts Division",
+    "ministry": "Ministry of Statistics & Programme Implementation",
+    "provider": "NIC",
+    "duration_hours": 7,
+    "level": "Beginner",
+    "language": [
+      "Hindi"
+    ],
+    "rating": 4.2,
+    "enrolled_count": 17492,
+    "recommended_experience": "11-15 years",
+    "competency_tags": [
+      "Data Science & Analytics",
+      "Domain"
+    ],
+    "certification": true
+  },
+  {
+    "id": "MOSPI-C036",
+    "title": "Machine Learning for Survey Data Imputation",
+    "primary_statistical_domain": "Data Science & Analytics",
+    "competency_type": "Domain",
+    "target_designation": "Junior Statistical Officer",
+    "target_organisation": "National Statistical Systems Training Academy (NSSTA)",
+    "ministry": "Ministry of Statistics & Programme Implementation",
+    "provider": "IGNOU",
+    "duration_hours": 3,
+    "level": "Intermediate",
+    "language": [
+      "English",
+      "Hindi"
+    ],
+    "rating": 3.9,
+    "enrolled_count": 15039,
+    "recommended_experience": "6-10 years",
+    "competency_tags": [
+      "Data Science & Analytics",
+      "Domain"
+    ],
+    "certification": true
+  },
+  {
+    "id": "MOSPI-C037",
+    "title": "Data Visualization for Policy Makers",
+    "primary_statistical_domain": "Data Science & Analytics",
+    "competency_type": "Functional",
+    "target_designation": "Director",
+    "target_organisation": "National Statistical Systems Training Academy (NSSTA)",
+    "ministry": "Ministry of Statistics & Programme Implementation",
+    "provider": "IIM Ahmedabad",
+    "duration_hours": 3,
+    "level": "Intermediate",
+    "language": [
+      "Hindi"
+    ],
+    "rating": 4.6,
+    "enrolled_count": 855,
+    "recommended_experience": "11-15 years",
+    "competency_tags": [
+      "Data Science & Analytics",
+      "Functional"
+    ],
+    "certification": true
+  },
+  {
+    "id": "MOSPI-C038",
+    "title": "Big Data Applications in Official Statistics",
+    "primary_statistical_domain": "Data Science & Analytics",
+    "competency_type": "Digital",
+    "target_designation": "Assistant Director",
+    "target_organisation": "Economic Statistics Division",
+    "ministry": "Ministry of Statistics & Programme Implementation",
+    "provider": "NIC",
+    "duration_hours": 8,
+    "level": "Advanced",
+    "language": [
+      "English",
+      "Hindi"
+    ],
+    "rating": 4.5,
+    "enrolled_count": 4883,
+    "recommended_experience": "0-2 years",
+    "competency_tags": [
+      "Data Science & Analytics",
+      "Digital"
+    ],
+    "certification": true
+  },
+  {
+    "id": "MOSPI-C039",
+    "title": "Compiling State-Level GSDP Estimates — Advanced Practicum",
+    "primary_statistical_domain": "National Accounts",
+    "competency_type": "Digital",
+    "target_designation": "Assistant Director",
+    "target_organisation": "Economic Statistics Division",
+    "ministry": "Ministry of Statistics & Programme Implementation",
+    "provider": "IIM Ahmedabad",
+    "duration_hours": 6,
+    "level": "Intermediate",
+    "language": [
+      "English"
+    ],
+    "rating": 4.3,
+    "enrolled_count": 6711,
+    "recommended_experience": "20+ years",
+    "competency_tags": [
+      "National Accounts",
+      "Digital"
+    ],
+    "certification": true
+  },
+  {
+    "id": "MOSPI-C040",
+    "title": "Wage and Earnings Statistics Compilation — Advanced Practicum",
+    "primary_statistical_domain": "Labour Statistics",
+    "competency_type": "Digital",
+    "target_designation": "Deputy Director",
+    "target_organisation": "Subordinate Statistical Service",
+    "ministry": "Ministry of Statistics & Programme Implementation",
+    "provider": "MoSPI Academy",
+    "duration_hours": 6,
+    "level": "Advanced",
+    "language": [
+      "English",
+      "Hindi"
+    ],
+    "rating": 4.3,
+    "enrolled_count": 5779,
+    "recommended_experience": "0-2 years",
+    "competency_tags": [
+      "Labour Statistics",
+      "Digital"
+    ],
+    "certification": true
+  },
+  {
+    "id": "MOSPI-C041",
+    "title": "Index Number Theory for Price Statistics — Advanced Practicum",
+    "primary_statistical_domain": "Price Statistics",
+    "competency_type": "Functional",
+    "target_designation": "Director",
+    "target_organisation": "Field Operations Division",
+    "ministry": "Ministry of Statistics & Programme Implementation",
+    "provider": "NIC",
+    "duration_hours": 8,
+    "level": "Intermediate",
+    "language": [
+      "English"
+    ],
+    "rating": 4.4,
+    "enrolled_count": 5991,
+    "recommended_experience": "20+ years",
+    "competency_tags": [
+      "Price Statistics",
+      "Functional"
+    ],
+    "certification": true
+  },
+  {
+    "id": "MOSPI-C042",
+    "title": "Land Use Statistics and Remote Sensing — Advanced Practicum",
+    "primary_statistical_domain": "Agricultural Statistics",
+    "competency_type": "Domain",
+    "target_designation": "Statistical Investigator Grade I",
+    "target_organisation": "National Accounts Division",
+    "ministry": "Ministry of Statistics & Programme Implementation",
+    "provider": "MoSPI Academy",
+    "duration_hours": 6,
+    "level": "Intermediate",
+    "language": [
+      "Hindi"
+    ],
+    "rating": 4.9,
+    "enrolled_count": 1693,
+    "recommended_experience": "3-5 years",
+    "competency_tags": [
+      "Agricultural Statistics",
+      "Domain"
+    ],
+    "certification": true
+  },
+  {
+    "id": "MOSPI-C043",
+    "title": "Index of Industrial Production (IIP) Compilation — Advanced Practicum",
+    "primary_statistical_domain": "Industrial Statistics",
+    "competency_type": "Functional",
+    "target_designation": "Joint Director",
+    "target_organisation": "Economic Statistics Division",
+    "ministry": "Ministry of Statistics & Programme Implementation",
+    "provider": "IIM Ahmedabad",
+    "duration_hours": 4,
+    "level": "Intermediate",
+    "language": [
+      "Hindi"
+    ],
+    "rating": 4.7,
+    "enrolled_count": 4085,
+    "recommended_experience": "3-5 years",
+    "competency_tags": [
+      "Industrial Statistics",
+      "Functional"
+    ],
+    "certification": true
+  },
+  {
+    "id": "MOSPI-C044",
+    "title": "Gender Statistics and Data Disaggregation — Advanced Practicum",
+    "primary_statistical_domain": "Social Statistics",
+    "competency_type": "Domain",
+    "target_designation": "Junior Statistical Officer",
+    "target_organisation": "Subordinate Statistical Service",
+    "ministry": "Ministry of Statistics & Programme Implementation",
+    "provider": "NCAER",
+    "duration_hours": 6,
+    "level": "Advanced",
+    "language": [
+      "English",
+      "Hindi"
+    ],
+    "rating": 4.7,
+    "enrolled_count": 5698,
+    "recommended_experience": "3-5 years",
+    "competency_tags": [
+      "Social Statistics",
+      "Domain"
+    ],
+    "certification": false
+  },
+  {
+    "id": "MOSPI-C045",
+    "title": "Input-Output Table Construction — Advanced Practicum",
+    "primary_statistical_domain": "Economic Statistics",
+    "competency_type": "Behavioral",
+    "target_designation": "Director",
+    "target_organisation": "Field Operations Division",
+    "ministry": "Ministry of Statistics & Programme Implementation",
+    "provider": "IIM Ahmedabad",
+    "duration_hours": 8,
+    "level": "Advanced",
+    "language": [
+      "Hindi"
+    ],
+    "rating": 4.7,
+    "enrolled_count": 5043,
+    "recommended_experience": "3-5 years",
+    "competency_tags": [
+      "Economic Statistics",
+      "Behavioral"
+    ],
+    "certification": false
+  },
+  {
+    "id": "MOSPI-C046",
+    "title": "CAPI Tools for Field Data Collection — Advanced Practicum",
+    "primary_statistical_domain": "Survey Methodology",
+    "competency_type": "Digital",
+    "target_designation": "Statistical Investigator Grade II",
+    "target_organisation": "Field Operations Division",
+    "ministry": "Ministry of Statistics & Programme Implementation",
+    "provider": "NIC",
+    "duration_hours": 8,
+    "level": "Intermediate",
+    "language": [
+      "English"
+    ],
+    "rating": 4.2,
+    "enrolled_count": 1820,
+    "recommended_experience": "0-2 years",
+    "competency_tags": [
+      "Survey Methodology",
+      "Digital"
+    ],
+    "certification": true
+  },
+  {
+    "id": "MOSPI-C047",
+    "title": "Monitoring SDG Progress at State Level — Advanced Practicum",
+    "primary_statistical_domain": "SDG Indicators",
+    "competency_type": "Behavioral",
+    "target_designation": "Statistical Investigator Grade I",
+    "target_organisation": "National Statistical Systems Training Academy (NSSTA)",
+    "ministry": "Ministry of Statistics & Programme Implementation",
+    "provider": "ISI Kolkata",
+    "duration_hours": 10,
+    "level": "Advanced",
+    "language": [
+      "English",
+      "Hindi"
+    ],
+    "rating": 4.3,
+    "enrolled_count": 3888,
+    "recommended_experience": "11-15 years",
+    "competency_tags": [
+      "SDG Indicators",
+      "Behavioral"
+    ],
+    "certification": false
+  },
+  {
+    "id": "MOSPI-C048",
+    "title": "SDMX Standards for Data Exchange — Advanced Practicum",
+    "primary_statistical_domain": "Data Quality & Standards",
+    "competency_type": "Digital",
+    "target_designation": "Deputy Director",
+    "target_organisation": "Field Operations Division",
+    "ministry": "Ministry of Statistics & Programme Implementation",
+    "provider": "NSSTA",
+    "duration_hours": 10,
+    "level": "Advanced",
+    "language": [
+      "Hindi"
+    ],
+    "rating": 4.8,
+    "enrolled_count": 7365,
+    "recommended_experience": "0-2 years",
+    "competency_tags": [
+      "Data Quality & Standards",
+      "Digital"
+    ],
+    "certification": true
+  },
+  {
+    "id": "MOSPI-C049",
+    "title": "Open Government Data (OGD) Platform Practices — Advanced Practicum",
+    "primary_statistical_domain": "Data Dissemination",
+    "competency_type": "Behavioral",
+    "target_designation": "Joint Director",
+    "target_organisation": "National Accounts Division",
+    "ministry": "Ministry of Statistics & Programme Implementation",
+    "provider": "NIC",
+    "duration_hours": 4,
+    "level": "Advanced",
+    "language": [
+      "English",
+      "Hindi"
+    ],
+    "rating": 4.3,
+    "enrolled_count": 7124,
+    "recommended_experience": "6-10 years",
+    "competency_tags": [
+      "Data Dissemination",
+      "Behavioral"
+    ],
+    "certification": true
+  },
+  {
+    "id": "MOSPI-C050",
+    "title": "Machine Learning for Survey Data Imputation — Advanced Practicum",
+    "primary_statistical_domain": "Data Science & Analytics",
+    "competency_type": "Behavioral",
+    "target_designation": "Deputy Director",
+    "target_organisation": "National Statistical Office (NSO)",
+    "ministry": "Ministry of Statistics & Programme Implementation",
+    "provider": "NSSTA",
+    "duration_hours": 10,
+    "level": "Intermediate",
+    "language": [
+      "English"
+    ],
+    "rating": 4.1,
+    "enrolled_count": 4762,
+    "recommended_experience": "0-2 years",
+    "competency_tags": [
+      "Data Science & Analytics",
+      "Behavioral"
+    ],
+    "certification": true
+  }
+]

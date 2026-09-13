@@ -1,0 +1,705 @@
+/* ============================================================
+   Learning Material Viewer Styles
+   learning-material.css
+   Scoped to .lm-* classes — no existing styles overridden.
+   ============================================================ */
+
+/* Back link override spacing */
+.lm-back {
+  margin-bottom: 18px;
+}
+
+/* Page wrapper */
+.lm-page {
+  max-width: 820px;
+}
+
+/* ---- Header ---- */
+.lm-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 18px;
+  padding: 22px 24px;
+  background: linear-gradient(110deg, #eef4fb, #f5f9fd);
+  border: 1px solid #d9e6f2;
+  border-radius: 7px;
+}
+
+.lm-header-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  flex: 1;
+  min-width: 0;
+}
+
+.lm-icon-wrap {
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  background: #ddeaf7;
+  border: 1px solid #c9dff0;
+  border-radius: 9px;
+  color: #3a6fa0;
+  flex-shrink: 0;
+}
+
+.lm-eyebrow {
+  font-size: 8px;
+  letter-spacing: 0.9px;
+  font-weight: 600;
+  color: #6a8fb0;
+  margin-bottom: 5px;
+}
+
+.lm-title {
+  font-size: 19px;
+  font-weight: 660;
+  color: #243f5c;
+  line-height: 1.4;
+  margin: 0 0 8px;
+}
+
+.lm-meta {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 9px;
+  color: #7a94ab;
+  flex-wrap: wrap;
+}
+
+.lm-sep {
+  opacity: 0.45;
+}
+
+.lm-header-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.lm-print-btn {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 9px;
+  font-weight: 550;
+  color: #476d8f;
+  background: #fff;
+  border: 1px solid #c7daea;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background 0.18s, border-color 0.18s;
+  white-space: nowrap;
+}
+
+.lm-print-btn:hover {
+  background: #edf4fb;
+  border-color: #a8c6e0;
+}
+
+/* ---- Disclaimer ---- */
+.lm-disclaimer {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 11px 15px;
+  background: #fffbf0;
+  border: 1px solid #f0e0a8;
+  border-radius: 5px;
+  font-size: 9px;
+  color: #8a6e2a;
+  line-height: 1.7;
+  margin-bottom: 22px;
+}
+
+.lm-disclaimer svg {
+  color: #c99a28;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+/* ---- Table of Contents ---- */
+.lm-toc {
+  background: #f7fafd;
+  border: 1px solid #dde9f4;
+  border-radius: 6px;
+  padding: 16px 20px;
+  margin-bottom: 28px;
+}
+
+.lm-toc-title {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 9px;
+  font-weight: 650;
+  color: #507090;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  margin-bottom: 10px;
+}
+
+.lm-toc-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px 20px;
+}
+
+.lm-toc-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 9px;
+  color: #3a6898;
+  text-decoration: none;
+  padding: 4px 0;
+  transition: color 0.15s;
+  line-height: 1.5;
+}
+
+.lm-toc-link:hover {
+  color: #1e4f80;
+}
+
+.lm-toc-link svg {
+  flex-shrink: 0;
+  opacity: 0.55;
+}
+
+/* ---- Body / Sections ---- */
+.lm-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.lm-section {
+  border-top: 1px solid #eaeff6;
+  padding: 24px 0;
+}
+
+.lm-section:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.lm-section-heading {
+  font-size: 15px;
+  font-weight: 640;
+  color: #2a4a6b;
+  margin: 0 0 14px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.lm-section-heading::before {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 18px;
+  background: #3a7ab8;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+/* ---- Content blocks ---- */
+.lm-content-block {
+  font-size: 11px;
+  line-height: 1.85;
+  color: #3d5570;
+}
+
+.lm-content-block p {
+  margin: 0 0 10px;
+  color: #3d5570;
+}
+
+.lm-content-block p:last-child {
+  margin-bottom: 0;
+}
+
+.lm-content-block strong {
+  color: #243f5c;
+  font-weight: 600;
+}
+
+.lm-content-block br {
+  display: block;
+  margin: 4px 0;
+  content: '';
+}
+
+/* Lists */
+.lm-content-block .lm-list,
+.lm-list {
+  margin: 8px 0 10px 18px;
+  padding: 0;
+}
+
+.lm-list li {
+  margin-bottom: 5px;
+  font-size: 11px;
+  color: #3d5570;
+  line-height: 1.75;
+}
+
+/* ---- Subsections ---- */
+.lm-subsections {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.lm-subsection {
+  background: #f8fafd;
+  border: 1px solid #e4edf5;
+  border-left: 3px solid #8bb8d9;
+  border-radius: 4px;
+  padding: 14px 16px;
+}
+
+.lm-subsection-title {
+  font-size: 11px;
+  font-weight: 640;
+  color: #2d5070;
+  margin: 0 0 8px;
+}
+
+/* ---- Tables ---- */
+.lm-table-wrap {
+  overflow-x: auto;
+  margin: 10px 0;
+}
+
+.lm-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 10px;
+}
+
+.lm-table th {
+  background: #e9f0f8;
+  color: #2d4e6d;
+  font-weight: 600;
+  padding: 8px 12px;
+  text-align: left;
+  border: 1px solid #cfdced;
+  font-size: 9px;
+  letter-spacing: 0.2px;
+}
+
+.lm-table td {
+  padding: 7px 12px;
+  border: 1px solid #dde6f0;
+  color: #3d5570;
+  vertical-align: top;
+  line-height: 1.6;
+}
+
+.lm-table tr:nth-child(even) td {
+  background: #f5f8fc;
+}
+
+/* ---- Footer nav ---- */
+.lm-footer-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 36px;
+  padding-top: 22px;
+  border-top: 1px solid #e4ecf3;
+}
+
+/* ---- Course material link on cards ---- */
+.course-material-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 8px;
+  font-weight: 550;
+  color: #5c809f;
+  text-decoration: none;
+  border: 1px solid #ccdce9;
+  border-radius: 3px;
+  padding: 5px 9px;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.course-material-link:hover {
+  background: #eef4fa;
+  border-color: #9fbdd4;
+  color: #325d80;
+}
+
+/* ---- Print styles ---- */
+@media print {
+  .lm-back,
+  .lm-header-right,
+  .lm-footer-nav,
+  .lm-disclaimer,
+  /* Hide sidebar/header in print */
+  .global-header,
+  .sidebar,
+  .app-footer,
+  .theme-toggle {
+    display: none !important;
+  }
+
+  .lm-page {
+    max-width: 100%;
+  }
+
+  .lm-header {
+    border: 1px solid #ccc;
+    background: none;
+  }
+
+  .lm-section {
+    page-break-inside: avoid;
+  }
+
+  .lm-subsection {
+    page-break-inside: avoid;
+  }
+
+  .lm-table {
+    page-break-inside: avoid;
+  }
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 767px) {
+  .lm-header {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .lm-header-right {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .lm-toc-list {
+    grid-template-columns: 1fr;
+  }
+
+  .lm-title {
+    font-size: 16px;
+  }
+
+  .lm-footer-nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .lm-footer-nav .action-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Dark mode support */
+html[data-theme="dark"] .lm-header {
+  background: var(--panel);
+  border-color: var(--line);
+}
+
+html[data-theme="dark"] .lm-icon-wrap {
+  background: #1e3348;
+  border-color: #2b4a68;
+  color: #7aacce;
+}
+
+html[data-theme="dark"] .lm-title {
+  color: var(--ink);
+}
+
+html[data-theme="dark"] .lm-toc {
+  background: var(--soft);
+  border-color: var(--line);
+}
+
+html[data-theme="dark"] .lm-disclaimer {
+  background: #2c2205;
+  border-color: #6b5010;
+  color: #c9a84c;
+}
+
+html[data-theme="dark"] .lm-section {
+  border-color: var(--line);
+}
+
+html[data-theme="dark"] .lm-section-heading {
+  color: #b8ccdf;
+}
+
+html[data-theme="dark"] .lm-content-block,
+html[data-theme="dark"] .lm-content-block p,
+html[data-theme="dark"] .lm-list li {
+  color: #b8c8d5;
+}
+
+html[data-theme="dark"] .lm-content-block strong {
+  color: #d6e4f0;
+}
+
+html[data-theme="dark"] .lm-subsection {
+  background: var(--soft);
+  border-color: var(--line);
+  border-left-color: #3a6898;
+}
+
+html[data-theme="dark"] .lm-subsection-title {
+  color: #9ab8d0;
+}
+
+html[data-theme="dark"] .lm-table th {
+  background: #1a3045;
+  color: #9cc0dc;
+  border-color: var(--line);
+}
+
+html[data-theme="dark"] .lm-table td {
+  color: #b0c5d5;
+  border-color: var(--line);
+}
+
+html[data-theme="dark"] .lm-table tr:nth-child(even) td {
+  background: #162535;
+}
+
+html[data-theme="dark"] .lm-print-btn {
+  background: var(--soft);
+  border-color: var(--line);
+  color: #8ab4cc;
+}
+
+html[data-theme="dark"] .lm-footer-nav {
+  border-color: var(--line);
+}
+
+html[data-theme="dark"] .course-material-link {
+  color: #8ab4cc;
+  border-color: var(--line);
+}
+
+html[data-theme="dark"] .course-material-link:hover {
+  background: #1a3248;
+  border-color: #3a6898;
+}
+
+/* ---- Header Actions ---- */
+.lm-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.lm-header-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: #ffffff;
+  border: 1px solid #c9dff0;
+  border-radius: 6px;
+  font-size: 11.5px;
+  font-weight: 500;
+  color: #24527b;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.lm-header-btn:hover {
+  background: #eef5fc;
+  border-color: #a8cae6;
+  color: #173d61;
+}
+
+/* ---- Tabs Switcher ---- */
+.lm-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 18px;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 2px;
+}
+
+.lm-tab-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 550;
+  color: #64748b;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -4px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  border-radius: 6px 6px 0 0;
+}
+
+.lm-tab-btn:hover {
+  color: #1e40af;
+  background: #f1f5f9;
+}
+
+.lm-tab-btn.active {
+  color: #1e40af;
+  border-bottom-color: #2563eb;
+  background: #eff6ff;
+}
+
+/* ---- PDF Viewer Card ---- */
+.lm-viewer-card {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 24px;
+}
+
+.lm-viewer-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  background: #f8fafc;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 12px;
+}
+
+.lm-viewer-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #334155;
+}
+
+.lm-viewer-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.lm-link-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  transition: background 0.15s;
+}
+
+.lm-link-action:hover {
+  background: #dbeafe;
+  text-decoration: underline;
+}
+
+.lm-iframe-wrapper {
+  position: relative;
+  width: 100%;
+  background: #525659;
+}
+
+.lm-pdf-iframe {
+  display: block;
+  border: none;
+  width: 100%;
+  min-height: 780px;
+}
+
+.lm-viewer-fallback {
+  padding: 10px 16px;
+  background: #f1f5f9;
+  border-top: 1px solid #e2e8f0;
+  color: #64748b;
+  text-align: center;
+}
+
+.lm-viewer-fallback a {
+  color: #2563eb;
+  font-weight: 500;
+}
+
+/* ---- Dark Mode Overrides for Viewer ---- */
+html[data-theme="dark"] .lm-header-btn {
+  background: var(--surface);
+  border-color: var(--line);
+  color: #8ab4cc;
+}
+
+html[data-theme="dark"] .lm-header-btn:hover {
+  background: #1a3248;
+  color: #a9d4f0;
+}
+
+html[data-theme="dark"] .lm-tabs {
+  border-bottom-color: var(--line);
+}
+
+html[data-theme="dark"] .lm-tab-btn {
+  color: #889bb0;
+}
+
+html[data-theme="dark"] .lm-tab-btn:hover {
+  color: #9cc0dc;
+  background: #162535;
+}
+
+html[data-theme="dark"] .lm-tab-btn.active {
+  color: #9cc0dc;
+  border-bottom-color: #4a86c6;
+  background: #192d42;
+}
+
+html[data-theme="dark"] .lm-viewer-card {
+  background: var(--surface);
+  border-color: var(--line);
+}
+
+html[data-theme="dark"] .lm-viewer-topbar {
+  background: #142230;
+  border-bottom-color: var(--line);
+  color: #b0c5d5;
+}
+
+html[data-theme="dark"] .lm-viewer-info {
+  color: #b0c5d5;
+}
+
+html[data-theme="dark"] .lm-link-action {
+  color: #8ab4cc;
+}
+
+html[data-theme="dark"] .lm-viewer-fallback {
+  background: #121e2b;
+  border-top-color: var(--line);
+  color: #7a8fa0;
+}
+

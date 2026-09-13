@@ -1,0 +1,244 @@
+{
+  "name": "MoSPI Assessment Generation Workflow",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "generate-mcqs",
+        "responseMode": "responseNode",
+        "options": {
+          "binaryData": true
+        }
+      },
+      "id": "webhook-trigger",
+      "name": "Webhook (Receive PDF)",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        180,
+        300
+      ],
+      "webhookId": "generate-mcqs"
+    },
+    {
+      "parameters": {
+        "jsCode": "// 1. Validate incoming binary payload\nconst item = $input.first();\nconst binary = item.binary || {};\n\n// Support both 'data0' and 'file' field names, ensuring consistency to data0\nlet binaryKey = null;\nif (binary.data0) {\n  binaryKey = 'data0';\n} else if (binary.file) {\n  binaryKey = 'file';\n  binary.data0 = binary.file;\n} else {\n  const firstKey = Object.keys(binary)[0];\n  if (firstKey) {\n    binaryKey = firstKey;\n    binary.data0 = binary[firstKey];\n  }\n}\n\nif (!binaryKey || !binary.data0) {\n  return [{\n    json: {\n      error: true,\n      statusCode: 400,\n      message: 'No PDF file detected in request. Please send multipart/form-data with binary field data0 or file.'\n    }\n  }];\n}\n\nconst mime = binary.data0.mimeType || '';\nconst fileName = binary.data0.fileName || '';\nif (!mime.includes('pdf') && !fileName.toLowerCase().endsWith('.pdf')) {\n  return [{\n    json: {\n      error: true,\n      statusCode: 400,\n      message: 'Uploaded file is not a valid PDF document.'\n    }\n  }];\n}\n\nreturn [{\n  json: {\n    valid: true,\n    fileName: fileName,\n    userId: item.json.userId || 'demo_user',\n    courseId: item.json.courseId || ''\n  },\n  binary: {\n    data0: binary.data0\n  }\n}];"
+      },
+      "id": "validate-pdf-input",
+      "name": "Validate PDF Input",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        380,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "boolean": [
+            {
+              "value1": "={{ $json.valid }}",
+              "value2": true
+            }
+          ]
+        }
+      },
+      "id": "if-valid-pdf",
+      "name": "Is Valid PDF?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        580,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "pdf",
+        "binaryPropertyName": "data0",
+        "destinationKey": "text"
+      },
+      "id": "extract-pdf-text",
+      "name": "Extract PDF Text",
+      "type": "n8n-nodes-base.extractFromFile",
+      "typeVersion": 1,
+      "position": [
+        800,
+        220
+      ]
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=You are an expert assessment generator for the Ministry of Statistics and Programme Implementation (MoSPI), Government of India.\n\nExtract the core concepts from the following official training document and generate between 12 and 15 multiple-choice questions (MCQs) for competency assessment.\n\nSTRICT RULES:\n1. Generate between 12 and 15 questions.\n2. Each question MUST contain exactly 4 distinct options.\n3. Each question MUST designate exactly 1 correct answer using a 0-indexed integer (0, 1, 2, or 3).\n4. Provide a clear, educational explanation for each answer.\n5. Output ONLY valid JSON matching this schema:\n{\n  \"questions\": [\n    {\n      \"id\": \"q_1\",\n      \"text\": \"Question text here?\",\n      \"options\": [\"Option 1\", \"Option 2\", \"Option 3\", \"Option 4\"],\n      \"correct\": 0,\n      \"explanation\": \"Detailed explanation here\",\n      \"competency\": \"National Accounts / Statistical Methodology\",\n      \"topic\": \"Specific topic from text\"\n    }\n  ]\n}\n\nIMPORTANT: Do NOT wrap the JSON in markdown code fences (no ```json or ```). Return ONLY the raw JSON string.\n\nDocument Text:\n{{ $json.text }}"
+      },
+      "id": "llm-generator",
+      "name": "Generate MCQs (LLM Chain)",
+      "type": "@n8n/n8n-nodes-langchain.chainLlm",
+      "typeVersion": 1.4,
+      "position": [
+        1020,
+        220
+      ]
+    },
+    {
+      "parameters": {
+        "modelName": "models/gemini-2.5-flash",
+        "options": {
+          "temperature": 0.2
+        }
+      },
+      "id": "gemini-model",
+      "name": "Google Gemini Chat Model",
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        1020,
+        420
+      ],
+      "credentials": {
+        "googlePalmApi": {
+          "id": "google-gemini-creds",
+          "name": "Google Gemini (PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Robust JSON sanitizer, validator, and normalizer for MoSPI MCQ standards\nconst item = $input.first();\nlet raw = item.json.output || item.json.text || item.json.content || item.json.response || item.json;\n\nif (typeof raw === 'object' && raw.questions && Array.isArray(raw.questions)) {\n  return [{ json: normalizeQuestions(raw.questions) }];\n}\n\nif (typeof raw !== 'string') {\n  raw = JSON.stringify(raw);\n}\n\n// 1. Strip markdown code fences\nraw = raw.replace(/```(?:json)?/gi, '').replace(/```/g, '').trim();\n\n// 2. Locate boundaries of JSON\nconst startIdx = raw.indexOf('{');\nconst endIdx = raw.lastIndexOf('}');\nif (startIdx !== -1 && endIdx !== -1 && endIdx >= startIdx) {\n  raw = raw.substring(startIdx, endIdx + 1);\n}\n\nlet parsed;\ntry {\n  parsed = JSON.parse(raw);\n} catch (err) {\n  return [{\n    json: {\n      error: true,\n      statusCode: 500,\n      message: 'Failed to parse LLM output as JSON: ' + err.message\n    }\n  }];\n}\n\nlet questionsArray = [];\nif (Array.isArray(parsed)) {\n  questionsArray = parsed;\n} else if (parsed.questions && Array.isArray(parsed.questions)) {\n  questionsArray = parsed.questions;\n} else if (parsed.data && Array.isArray(parsed.data.questions)) {\n  questionsArray = parsed.data.questions;\n} else {\n  for (const key of Object.keys(parsed)) {\n    if (Array.isArray(parsed[key])) {\n      questionsArray = parsed[key];\n      break;\n    }\n  }\n}\n\nif (!questionsArray || questionsArray.length === 0) {\n  return [{\n    json: {\n      error: true,\n      statusCode: 500,\n      message: 'No questions found in LLM JSON output.'\n    }\n  }];\n}\n\nfunction normalizeQuestions(arr) {\n  const normalized = arr.map((q, idx) => {\n    const text = q.text || q.question || `Question ${idx + 1}`;\n    let rawOpts = q.options || [];\n    if (!Array.isArray(rawOpts)) {\n      rawOpts = [String(rawOpts)];\n    }\n    let options = rawOpts.map(o => String(o).trim()).filter(Boolean);\n    if (options.length > 4) {\n      options = options.slice(0, 4);\n    }\n    while (options.length < 4) {\n      options.push(`Option ${options.length + 1}`);\n    }\n    \n    let correct = 0;\n    if (typeof q.correct === 'number' && q.correct >= 0 && q.correct < options.length) {\n      correct = q.correct;\n    } else if (typeof q.correctAnswer === 'number' && q.correctAnswer >= 0 && q.correctAnswer < options.length) {\n      correct = q.correctAnswer;\n    } else if (typeof q.correct === 'string') {\n      const c = q.correct.trim();\n      if (options.includes(c)) {\n        correct = options.indexOf(c);\n      } else if (c.length === 1 && 'ABCD'.includes(c.toUpperCase())) {\n        correct = c.toUpperCase().charCodeAt(0) - 65;\n      }\n    }\n\n    return {\n      id: q.id || `q_${idx + 1}`,\n      text: text,\n      type: 'MCQ',\n      options: options,\n      correct: Math.min(Math.max(correct, 0), options.length - 1),\n      explanation: q.explanation || `The correct answer is ${options[correct]}.`,\n      competency: q.competency || 'MoSPI Official Statistics',\n      topic: q.topic || 'Statistical Methodology'\n    };\n  });\n\n  return {\n    questions: normalized\n  };\n}\n\nreturn [{ json: normalizeQuestions(questionsArray) }];"
+      },
+      "id": "sanitize-json-code",
+      "name": "Sanitize & Validate JSON",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1240,
+        220
+      ]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ $json }}",
+        "options": {
+          "responseCode": 200
+        }
+      },
+      "id": "respond-to-webhook-success",
+      "name": "Respond to Webhook (Success)",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        1460,
+        220
+      ]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ $json }}",
+        "options": {
+          "responseCode": "={{ $json.statusCode || 400 }}"
+        }
+      },
+      "id": "respond-to-webhook-error",
+      "name": "Respond to Webhook (Error)",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        800,
+        420
+      ]
+    }
+  ],
+  "connections": {
+    "Webhook (Receive PDF)": {
+      "main": [
+        [
+          {
+            "node": "Validate PDF Input",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Validate PDF Input": {
+      "main": [
+        [
+          {
+            "node": "Is Valid PDF?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Is Valid PDF?": {
+      "main": [
+        [
+          {
+            "node": "Extract PDF Text",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Respond to Webhook (Error)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract PDF Text": {
+      "main": [
+        [
+          {
+            "node": "Generate MCQs (LLM Chain)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Gemini Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Generate MCQs (LLM Chain)",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generate MCQs (LLM Chain)": {
+      "main": [
+        [
+          {
+            "node": "Sanitize & Validate JSON",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Sanitize & Validate JSON": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook (Success)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  }
+}
