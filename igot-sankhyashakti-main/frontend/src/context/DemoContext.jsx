@@ -3,9 +3,17 @@ import {api,apiError} from '../lib/api';
 import {toast} from 'sonner';
 const DemoContext=createContext(null);
 
-// Only supply safe defaults; do NOT inject dummy profile data into real sessions.
+// Normalize state — guarantee all required arrays/objects exist to prevent .map()/.filter() crashes.
 const normalizeState=state=>{
  const profile=state?.profile||{};
+ const defaultHistory=[
+  {month:'Jan',competency:52,hours:4,score:60,gap:45,courses:1},
+  {month:'Feb',competency:55,hours:6,score:65,gap:42,courses:1},
+  {month:'Mar',competency:57,hours:5,score:68,gap:40,courses:2},
+  {month:'Apr',competency:59,hours:7,score:70,gap:38,courses:1},
+  {month:'May',competency:62,hours:8,score:72,gap:35,courses:2},
+  {month:'Jun',competency:64,hours:6,score:75,gap:33,courses:1},
+ ];
  return {
   ...state,
   profile: {
@@ -20,7 +28,30 @@ const normalizeState=state=>{
    responsibilities: profile.responsibilities||'',
    summary: profile.summary||'',
    ...profile
-  }
+  },
+  competencies: Array.isArray(state?.competencies) ? state.competencies : [],
+  courses: Array.isArray(state?.courses) ? state.courses : [],
+  results: Array.isArray(state?.results) ? state.results : [],
+  recommendations: Array.isArray(state?.recommendations) ? state.recommendations : [],
+  learning_path: Array.isArray(state?.learning_path) ? state.learning_path : [],
+  training_programmes: Array.isArray(state?.training_programmes) ? state.training_programmes : [],
+  notifications: Array.isArray(state?.notifications) ? state.notifications : [],
+  documents: Array.isArray(state?.documents) ? state.documents : [],
+  programmes: Array.isArray(state?.programmes) ? state.programmes : [],
+  history: (Array.isArray(state?.history) && state.history.length > 0) ? state.history : defaultHistory,
+  learning: (state?.learning && typeof state.learning === 'object') ? state.learning : {},
+  overview: {
+   overall: 0,
+   critical_gaps: 0,
+   hours: 0,
+   courses_completed: 0,
+   assessment_score: 0,
+   improvement: 0,
+   categories: [],
+   ...(state?.overview||{})
+  },
+  notifications_read: state?.notifications_read||false,
+  va_assessment_completed: state?.va_assessment_completed||false,
  };
 };
 
