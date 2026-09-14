@@ -47,59 +47,118 @@
 }
 
 .register-card {
-  background: #fff;
-  border: 1px solid #dbe5ee;
-  box-shadow: 0 16px 40px rgba(26, 64, 98, .1);
-  padding: 30px;
-  border-radius: 8px
+  background: #ffffff;
+  border: 1px solid #e1eaf3;
+  box-shadow: 0 4px 6px -1px rgba(15,40,80,.04), 0 20px 50px rgba(15,40,80,.10);
+  padding: 36px 36px 32px;
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden
+}
+.register-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #f97316 0%, #1d5db5 50%, #22c55e 100%)
 }
 
 .register-card-heading {
-  border-bottom: 1px solid #e8eef3;
-  padding-bottom: 18px;
-  margin-bottom: 22px
+  border-bottom: 1px solid #edf2f7;
+  padding-bottom: 20px;
+  margin-bottom: 26px
 }
 
 .register-card-heading h2 {
-  margin: 6px 0;
-  color: #173f68
+  margin: 6px 0 4px;
+  color: #0f2850;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.3px
 }
 
 .register-card-heading p {
   margin: 0;
-  color: #718194;
-  font-size: 13px
+  color: #64748b;
+  font-size: 12.5px;
+  line-height: 1.6
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #1d5db5;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 99px;
+  padding: 3px 12px;
+  margin-bottom: 10px;
+  text-transform: uppercase
+}
+.eyebrow::before {
+  content: '';
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: #1d5db5;
+  display: inline-block
 }
 
 .register-form {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 18px
+  gap: 20px
 }
 
 .register-form>label {
   display: flex;
   flex-direction: column;
-  gap: 7px;
-  color: #38566e;
-  font-size: 13px;
-  font-weight: 600
+  gap: 6px;
+  color: #334155;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  text-transform: uppercase
 }
 
-.register-form select {
-  height: 42px;
-  border: 1px solid #c9d6e2;
-  border-radius: 4px;
-  padding: 0 11px;
-  background: #fff;
-  color: #29445b;
+.register-form select,
+.register-form input {
+  height: 44px;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 0 14px;
+  background: #f8fafc;
+  color: #1e293b;
   font: inherit;
-  font-weight: 400
+  font-size: 13px;
+  font-weight: 400;
+  transition: border-color .18s, background .18s, box-shadow .18s;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none
+}
+
+.register-form select:hover,
+.register-form input:hover {
+  border-color: #94a3b8;
+  background: #fff
+}
+
+.register-form select:focus,
+.register-form input:focus {
+  border-color: #1d5db5;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(29,93,181,.12)
 }
 
 .register-form select:disabled {
-  background: #f3f6f8;
-  color: #94a2ae
+  background: #f1f5f9;
+  color: #94a3b8;
+  border-color: #e2e8f0;
+  cursor: not-allowed
 }
 
 .register-form fieldset {
@@ -117,9 +176,17 @@
 }
 
 .field-help {
-  margin: 5px 0 12px;
-  color: #798b9b;
-  font-size: 12px
+  margin: 4px 0 0;
+  color: #64748b;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  gap: 4px
+}
+.field-help::before {
+  content: '●';
+  font-size: 6px;
+  color: #1d5db5
 }
 
 .domain-grid {
@@ -150,10 +217,43 @@
   accent-color: #2864a6
 }
 
-.register-form>.action-btn {
+.register-form>.action-btn,
+.register-form-actions {
   grid-column: 1 / -1;
-  justify-self: start;
-  margin-top: 4px
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+  padding-top: 20px;
+  border-top: 1px solid #f1f5f9
+}
+
+.register-form-actions .action-btn,
+.register-form-actions button[type="submit"] {
+  height: 44px;
+  padding: 0 28px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all .2s;
+  cursor: pointer
+}
+
+.register-form-actions .action-btn:not([data-secondary]) {
+  background: linear-gradient(135deg, #1245a8 0%, #1d5db5 100%);
+  color: #fff;
+  border: none;
+  box-shadow: 0 4px 14px rgba(29,93,181,.35)
+}
+
+.register-form-actions .action-btn:not([data-secondary]):hover {
+  background: linear-gradient(135deg, #0d3a8a 0%, #1648a0 100%);
+  box-shadow: 0 6px 18px rgba(29,93,181,.45);
+  transform: translateY(-1px)
 }
 
 .register-success {
